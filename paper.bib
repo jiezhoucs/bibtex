@@ -1,0 +1,398 @@
+%==================================================================================================%
+% Research Papers
+%==================================================================================================%
+
+%==================================================================================================%
+% Security
+%==================================================================================================%
+
+%--------------------------------------------------------------------------------------------------%
+% In-process Isolation
+%--------------------------------------------------------------------------------------------------%
+@inproceedings{ILDI:DAC17,
+    author = {Cho, Yeongpil and Kwon, Donghyun and Paek, Yunheung},
+    title = {{Instruction-Level Data Isolation for the Kernel on ARM}},
+    booktitle = {Proceedings of the 54th Annual Design Automation Conference 2017},
+    series = {DAC '17},
+    year = {2017},
+    isbn = {978-1-4503-4927-7},
+    location = {Austin, TX, USA},
+    pages = {26:1--26:6},
+    articleno = {26},
+    numpages = {6},
+    url = {http://doi.acm.org/10.1145/3061639.3062267},
+    doi = {10.1145/3061639.3062267},
+    acmid = {3062267},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+}
+
+@inproceedings {IMIX:USS18,
+    author = {Tommaso Frassetto and Patrick Jauernig and Christopher Liebchen and Ahmad-Reza Sadeghi},
+    title = {{IMIX: In-Process Memory Isolation EXtension}},
+    booktitle = {27th {USENIX} Security Symposium ({USENIX} Security 18)},
+    year = {2018},
+    isbn = {978-1-939133-04-5},
+    address = {Baltimore, MD},
+    pages = {83--97},
+    url = {https://www.usenix.org/conference/usenixsecurity18/presentation/frassetto},
+    publisher = {{USENIX} Association},
+    month = aug,
+}
+
+@inproceedings {Hodor:ATC19,
+    author = {Mohammad Hedayati and Spyridoula Gravani and Ethan Johnson and John Criswell and Michael L. Scott and Kai Shen and Mike Marty},
+    title = {{Hodor: Intra-Process Isolation for High-Throughput Data Plane
+        Libraries}},
+    booktitle = {2019 {USENIX} Annual Technical Conference ({USENIX} {ATC} 19)},
+    year = {2019},
+    isbn = {978-1-939133-03-8},
+    address = {Renton, WA},
+    pages = {489--504},
+    url = {https://www.usenix.org/conference/atc19/presentation/hedayati-hodor},
+    publisher = {{USENIX} Association},
+    month = jul,
+}
+
+@inproceedings {ERIM:USS19,
+    author = {Anjo Vahldiek-Oberwagner and Eslam Elnikety and Nuno O. Duarte and Michael Sammler and Peter Druschel and Deepak Garg},
+    title = {{{ERIM}: Secure, Efficient In-process Isolation with Protection
+        Keys ({MPK})}},
+    booktitle = {28th {USENIX} Security Symposium ({USENIX} Security 19)},
+    year = {2019},
+    isbn = {978-1-939133-06-9},
+    address = {Santa Clara, CA},
+    pages = {1221--1238},
+    url = {https://www.usenix.org/conference/usenixsecurity19/presentation/vahldiek-oberwagner},
+    publisher = {{USENIX} Association},
+    month = aug,
+}
+
+%--------------------------------------------------------------------------------------------------%
+% Embedded Systems
+%--------------------------------------------------------------------------------------------------%
+@article{BEEBS:arXiv13,
+    author = {James Pallister and Simon Hollis and Jeremy Bennett},
+    title = {BEEBS: Open Benchmarks for Energy Measurements on Embedded Platforms},
+    journal = {arXiv preprint arXiv:1308.5174v2},
+    archiveprefix = {arXiv},
+    eprint = {1308.5174v2},
+    year = {2013},
+    month = {August}
+}
+
+@INPROCEEDINGS{RECFISH:ecrts19,
+    author={R. J. {Walls} and N. F. {Brown} and T. {Le Baron} and C. A. {Shue} and H. {Okhravi} and B. {Ward}},
+    booktitle={31st Conference on Real-Time Systems (ECRTS'19)},
+    title={Control-Flow Integrity for Real-Time Embedded Systems},
+    year={2019},
+    volume={},
+    number={},
+    pages={},
+    doi={},
+    ISSN={},
+    month={July},
+}
+
+@INPROCEEDINGS{EPOXY:Oakland17,
+    author={A. A. {Clements} and N. S. {Almakhdhub} and K. S. {Saab} and P. {Srivastava} and J. {Koo} and S. {Bagchi} and M. {Payer}},
+    booktitle={2017 IEEE Symposium on Security and Privacy (SP)},
+    title={{Protecting Bare-Metal Embedded Systems with Privilege Overlays}},
+    year={2017},
+    volume={},
+    number={}
+    pages={289-303},
+    doi={10.1109/SP.2017.37},
+    ISSN={2375-1207},
+    month={May},
+}
+
+
+%==================================================================================================%
+% Memory Safety
+%==================================================================================================%
+@inproceedings{SafePtr:PLDI94,
+    author = {Austin, Todd M. and Breach, Scott E. and Sohi, Gurindar S.},
+    title = {{Efficient Detection of All Pointer and Array Access Errors}},
+    booktitle = {Proceedings of the ACM SIGPLAN 1994 Conference on Programming Language Design and Implementation},
+    series = {PLDI '94},
+    year = {1994},
+    isbn = {0-89791-662-X},
+    location = {Orlando, Florida, USA},
+    pages = {290--301},
+    numpages = {12},
+    url = {http://doi.acm.org/10.1145/178243.178446},
+    doi = {10.1145/178243.178446},
+    acmid = {178446},
+    publisher = {ACM},
+}
+
+%--------------------------------------------------------------------------------------------------%
+% Spatial Memory Safety
+%--------------------------------------------------------------------------------------------------%
+@inproceedings{CPI:OSDI14,
+    author = {Kuznetsov, Volodymyr and Szekeres, L\'{a}szl\'{o} and Payer, Mathias and Candea, George and Sekar, R. and Song, Dawn},
+    title = {{Code-pointer Integrity}},
+    booktitle = {Proceedings of the 11th USENIX Conference on Operating Systems Design and Implementation},
+    series = {OSDI'14},
+    year = {2014},
+    isbn = {978-1-931971-16-4},
+    location = {Broomfield, CO},
+    pages = {147--163},
+    numpages = {17},
+    url = {http://dl.acm.org/citation.cfm?id=2685048.2685061},
+    acmid = {2685061},
+}
+
+@INPROCEEDINGS{CPIEfficacy:Oakland15,
+    author={I. {Evans} and S. {Fingeret} and J. {Gonzalez} and U. {Otgonbaatar} and T. {Tang} and H. {Shrobe} and S. {Sidiroglou-Douskos} and M. {Rinard} and H. {Okhravi}},
+    booktitle={2015 IEEE Symposium on Security and Privacy},
+    title={{Missing the Point(er): On the Effectiveness of Code Pointer Integrity}},
+    year={2015},
+    volume={},
+    number={},
+    pages={781-796},
+    keywords={data protection;security of data;code pointer integrity effectiveness;memory corruption attacks;legacy languages;memory safety;C-C++;control flow integrity;control-hijacking attacks;code pointer protection;instruction level isolation;ARM;information hiding;CPI safe region;data pointer overwrites;security mechanisms;time 98 hour;Computer crashes;Libraries;Delays;Safety;Security},
+    doi={10.1109/SP.2015.53},
+    ISSN={},
+    month={May},
+}
+
+%
+% ROP papers
+%
+@inproceedings{ROP:CCS07,
+    author = {Shacham, Hovav},
+    title = {The Geometry of Innocent Flesh on the Bone: Return-into-libc Without Function Calls (on the x86)},
+    booktitle = {Proceedings of the 14th ACM Conference on Computer and Communications Security},
+    series = {CCS '07},
+    year = {2007},
+    isbn = {978-1-59593-703-2},
+    location = {Alexandria, Virginia, USA},
+    pages = {552--561},
+    numpages = {10},
+    url = {http://doi.acm.org/10.1145/1315245.1315313},
+    doi = {10.1145/1315245.1315313},
+    acmid = {1315313},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {instruction set, return-into-libc, turing completeness},
+}
+
+@article{ROP:TISSEC12,
+    author = {Roemer, Ryan and Buchanan, Erik and Shacham, Hovav and Savage, Stefan},
+    title = {Return-Oriented Programming: Systems, Languages, and Applications},
+    journal = {ACM Trans. Inf. Syst. Secur.},
+    issue_date = {March 2012},
+    volume = {15},
+    number = {1},
+    month = mar,
+    year = {2012},
+    issn = {1094-9224},
+    pages = {2:1--2:34},
+    articleno = {2},
+    numpages = {34},
+    url = {http://doi.acm.org/10.1145/2133375.2133377},
+    doi = {10.1145/2133375.2133377},
+    acmid = {2133377},
+    publisher = {ACM},
+    keywords = {NX, RISC, Return-oriented programming, SPARC, W-xor-X, attacks, control flow integrity, memory safety, return-into-libc, x86},
+}
+
+@inproceedings {ROP:USS14,
+    author = {Nicholas Carlini and David Wagner},
+    title = {{{ROP} is Still Dangerous: Breaking Modern Defenses}},
+    booktitle = {23rd {USENIX} Security Symposium ({USENIX} Security 14)},
+    year = {2014},
+    isbn = {978-1-931971-15-7},
+    address = {San Diego, CA},
+    pages = {385--399},
+    url = {https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/carlini},
+    publisher = {{USENIX} Association},
+}
+
+%--------------------------------------------------------------------------------------------------%
+% Temporal Memory Safety
+%--------------------------------------------------------------------------------------------------%
+@inproceedings{DangPtr:Dhurjati:DSN06,
+    author = {Dhurjati, Dinakar and Adve, Vikram},
+    title = {{Efficiently Detecting All Dangling Pointer Uses in Production
+        Servers}},
+    booktitle = {Proceedings of the International Conference on Dependable Systems and Networks},
+    series = {DSN '06},
+    year = {2006},
+    isbn = {0-7695-2607-1},
+    pages = {269--280},
+    numpages = {12},
+    url = {http://dx.doi.org/10.1109/DSN.2006.31},
+    doi = {10.1109/DSN.2006.31},
+    acmid = {1135707},
+    address = {Washington, DC, USA},
+}
+
+@inproceedings{CETS:ISMM10,
+    author = {Nagarakatte, Santosh and Zhao, Jianzhou and Martin, Milo M.K. and Zdancewic, Steve},
+    title = {{CETS: Compiler-Enforced Temporal Safety for C}},
+    booktitle = {Proceedings of the 2010 International Symposium on Memory Management},
+    series = {ISMM '10},
+    year = {2010},
+    isbn = {978-1-4503-0054-4},
+    location = {Toronto, Ontario, Canada},
+    pages = {31--40},
+    numpages = {10},
+    url = {http://doi.acm.org/10.1145/1806651.1806657},
+    doi = {10.1145/1806651.1806657},
+    acmid = {1806657},
+    publisher = {ACM},
+    keywords = {c, dangling pointers, memory safety, temporal errors},
+} 
+
+@inproceedings{Undangle:ISSTA12,
+    author = {Caballero, Juan and Grieco, Gustavo and Marron, Mark and Nappa, Antonio},
+    title = {Undangle: Early Detection of Dangling Pointers in Use-after-free and Double-free Vulnerabilities},
+    booktitle = {Proceedings of the 2012 International Symposium on Software Testing and Analysis},
+    series = {ISSTA 2012},
+    year = {2012},
+    isbn = {978-1-4503-1454-1},
+    location = {Minneapolis, MN, USA},
+    pages = {133--143},
+    numpages = {11},
+    url = {http://doi.acm.org/10.1145/2338965.2336769},
+    doi = {10.1145/2338965.2336769},
+    acmid = {2336769},
+    publisher = {ACM},
+}
+
+@inproceedings{DANGNULL:NDSS15,
+  title={{Preventing Use-after-free with Dangling Pointers Nullification}},
+  author={Byoungyoung Lee and Chengyu Song and Yeongjin Jang and Tielei Wang and Taesoo Kim and Long Lu and Wenke Lee},
+  booktitle={NDSS},
+  year={2015}
+}
+
+@inproceedings{FreeSentry:NDSS15,
+  title = {{FreeSentry: Protecting Against Use-After-Free Vulnerabilities Due to
+      Dangling Pointers}},
+  author = {Yves Younan},
+  booktitle = {NDSS},
+  year = {2015}
+}
+
+@inproceedings{DangSan:EuroSys17,
+    author = {van der Kouwe, Erik and Nigade, Vinod and Giuffrida, Cristiano},
+    title = {{DangSan: Scalable Use-after-free Detection}},
+    booktitle = {Proceedings of the Twelfth European Conference on Computer Systems},
+    series = {EuroSys '17},
+    year = {2017},
+    isbn = {978-1-4503-4938-3},
+    location = {Belgrade, Serbia},
+    pages = {405--419},
+    numpages = {15},
+    url = {http://doi.acm.org/10.1145/3064176.3064211},
+    doi = {10.1145/3064176.3064211},
+    acmid = {3064211},
+    publisher = {ACM},
+    keywords = {Dangling pointers, LLVM, use-after-free},
+}
+
+@inproceedings {Oscar:USS17,
+    author = {Thurston H.Y. Dang and Petros Maniatis and David Wagner},
+    title = {Oscar: A Practical Page-Permissions-Based Scheme for Thwarting Dangling Pointers},
+    booktitle = {26th {USENIX} Security Symposium ({USENIX} Security 17)},
+    year = {2017},
+    isbn = {978-1-931971-40-9},
+    address = {Vancouver, BC},
+    pages = {815--832},
+    url = {https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/dang},
+    publisher = {{USENIX} Association},
+}
+
+@inproceedings{CRCount:NDSS19,
+    author = {Jangseop Shin and Donghyun Kwon and Jiwon Seo, Yeongpil Cho and
+        Yunheung Paek},
+    title = {{CRCount: Pointer Invalidation with Reference Counting to Mitigate
+        Use-after-free in Legacy C/C++}},
+    booktitle = {NDSS},
+    year = {2019}
+}
+
+@inproceedings{BOGO:ASPLOS19,
+    author = {Zhang, Tong and Lee, Dongyoon and Jung, Changhee},
+    title = {{BOGO: Buy Spatial Memory Safety, Get Temporal Memory Safety (Almost) Free}},
+    booktitle = {Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems},
+    series = {ASPLOS '19},
+    year = {2019},
+    isbn = {978-1-4503-6240-5},
+    location = {Providence, RI, USA},
+    pages = {631--644},
+    numpages = {14},
+    url = {http://doi.acm.org/10.1145/3297858.3304017},
+    doi = {10.1145/3297858.3304017},
+    acmid = {3304017},
+    keywords = {memory safety, mpx},
+}
+
+
+%--------------------------------------------------------------------------------------------------%
+% New Architecture
+%--------------------------------------------------------------------------------------------------%
+@inproceedings{CHERI:ISCA14,
+    author = {Woodruff, Jonathan and Watson, Robert N.M. and Chisnall, David and Moore, Simon W. and Anderson, Jonathan and Davis, Brooks and Laurie, Ben and Neumann, Peter G. and Norton, Robert and Roe, Michael},
+    title = {{The CHERI Capability Model: Revisiting RISC in an Age of Risk}},
+    booktitle = {Proceeding of the 41st Annual International Symposium on Computer Architecture},
+    series = {ISCA '14},
+    year = {2014},
+    isbn = {978-1-4799-4394-4},
+    location = {Minneapolis, Minnesota, USA},
+    pages = {457--468},
+    numpages = {12},
+    url = {http://dl.acm.org/citation.cfm?id=2665671.2665740},
+    acmid = {2665740},
+    publisher = {IEEE Press},
+    address = {Piscataway, NJ, USA},
+}
+
+
+%==================================================================================================%
+% Program Analysis
+%==================================================================================================%
+@inproceedings{APA:PLDI05,
+    author = {Lattner, Chris and Adve, Vikram},
+    title = {Automatic Pool Allocation: Improving Performance by Controlling Data Structure Layout in the Heap},
+    booktitle = {Proceedings of the 2005 ACM SIGPLAN Conference on Programming Language Design and Implementation},
+    series = {PLDI '05},
+    year = {2005},
+    isbn = {1-59593-056-6},
+    location = {Chicago, IL, USA},
+    pages = {129--142},
+    numpages = {14},
+    url = {http://doi.acm.org/10.1145/1065010.1065027},
+    doi = {10.1145/1065010.1065027},
+    acmid = {1065027},
+    publisher = {ACM},
+    keywords = {cache, data layout, pool allocation, recursive data structure, static analysis},
+}
+
+%--------------------------------------------------------------------------------------------------%
+% Pointer Analysis
+%--------------------------------------------------------------------------------------------------%
+@article{AliasUndecide:TOPLAS94,
+    author = {Ramalingam, G.},
+    title = {{The Undecidability of Aliasing}},
+    journal = {ACM Trans. Program. Lang. Syst.},
+    issue_date = {Sept. 1994},
+    volume = {16},
+    number = {5},
+    month = sep,
+    year = {1994},
+    issn = {0164-0925},
+    pages = {1467--1471},
+    numpages = {5},
+    url = {http://doi.acm.org/10.1145/186025.186041},
+    doi = {10.1145/186025.186041},
+    acmid = {186041},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {alias analysis, pointer analysis},
+}
+
