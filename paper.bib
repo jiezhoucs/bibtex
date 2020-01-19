@@ -100,7 +100,7 @@
     title={{Protecting Bare-Metal Embedded Systems with Privilege Overlays}},
     year={2017},
     volume={},
-    number={}
+    number={},
     pages={289-303},
     doi={10.1109/SP.2017.37},
     ISSN={2375-1207},
@@ -127,9 +127,9 @@
     publisher = {ACM},
 }
 
-@article{Patil:1997:LCC:250900.250910,
+@article{CGuards:SPE97,
     author = {Patil, Harish and Fischer, Charles},
-    title = {Low-cost, Concurrent Checking of Pointer and Array Accesses in C Programs},
+    title = {{Low-cost, Concurrent Checking of Pointer and Array Accesses in C Programs}},
     journal = {Softw. Pract. Exper.},
     issue_date = {Jan. 1997},
     volume = {27},
@@ -147,21 +147,14 @@
     keywords = {memory access checking, multiprocessor workstations, program slicing},
 }
 
-@inproceedings{Cyclone:ATC02,
-    author = {Jim, Trevor and Morrisett, J. Greg and Grossman, Dan and Hicks, Michael W. and Cheney, James and Wang, Yanling},
-    title = {{Cyclone: A Safe Dialect of C}},
-    booktitle = {Proceedings of the General Track of the Annual Conference on USENIX Annual Technical Conference},
-    series = {ATEC '02},
-    year = {2002},
-    isbn = {1-880446-00-6},
-    pages = {275--288},
-    numpages = {14},
-    url = {http://dl.acm.org/citation.cfm?id=647057.713871},
-    acmid = {713871},
-    publisher = {USENIX Association},
-    address = {Berkeley, CA, USA},
+@inproceedings{JKBoundsChecking:AADEBUG97,
+    author = {Richard W M Jones and Paul H J Kelly},
+    title = {{Backwards-compatible bounds checking for arrays and pointers in C programs}},
+    booktitle = {Proceedings of the Third International Workshop on Automated Debugging},
+    location = {Linköping, Sweden},
+    year = {1997},
+    month = May,
 }
-
 
 @inproceedings{SekarMemSafe:FSE04,
  author = {Xu, Wei and DuVarney, Daniel C. and Sekar, R.},
@@ -181,6 +174,41 @@
  address = {New York, NY, USA},
  keywords = {C, memory safety, program transformation},
 }
+
+@inproceedings{SAFECode:PLDI06,
+    author = {Dhurjati, Dinakar and Kowshik, Sumant and Adve, Vikram},
+    title = {{SAFECode: Enforcing Alias Analysis for Weakly Typed Languages}},
+    year = {2006},
+    isbn = {1595933204},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1133981.1133999},
+    doi = {10.1145/1133981.1133999},
+    booktitle = {Proceedings of the 27th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+    pages = {144–157},
+    numpages = {14},
+    keywords = {alias analysis, automatic pool allocation, region management, programming languages, compilers},
+    location = {Ottawa, Ontario, Canada},
+    series = {PLDI ’06}
+}
+
+@inproceedings{SAFECodeBoundsCheck:ICSE06,
+    author = {Dhurjati, Dinakar and Adve, Vikram},
+    title = {{Backwards-Compatible Array Bounds Checking for C with Very Low Overhead}},
+    year = {2006},
+    isbn = {1595933751},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1134285.1134309},
+    doi = {10.1145/1134285.1134309},
+    booktitle = {Proceedings of the 28th International Conference on Software Engineering},
+    pages = {162–171},
+    numpages = {10},
+    keywords = {programming languages, automatic pool allocation, region management, compilers, array bounds checking},
+    location = {Shanghai, China},
+    series = {ICSE ’06}
+}
+
 
 @inproceedings{SVA:SOSP07,
     author = {Criswell, John and Lenharth, Andrew and Dhurjati, Dinakar and Adve, Vikram},
@@ -251,6 +279,73 @@
     keywords = {control-flow integrity, inlined reference monitors, malicious operating systems, software fault isolation, software security},
 }
 
+@INPROCEEDINGS {Sanitize:SoK:Oakland19,
+    author = {D. Song and J. Lettner and P. Rajasekaran and Y. Na and S. Volckaert and P. Larsen and M. Franz},
+    booktitle = {2019 2019 IEEE Symposium on Security and Privacy (SP)},
+    title = {{SoK: Sanitizing for Security}},
+    year = {2019},
+    volume = {},
+    issn = {CFP19020-ART},
+    pages = {},
+    keywords = {computer-bugs;security;software-safety;system-software},
+    doi = {10.1109/SP.2019.00010},
+    url = {https://doi.ieeecomputersociety.org/10.1109/SP.2019.00010},
+    publisher = {IEEE Computer Society},
+    address = {Los Alamitos, CA, USA},
+    month = {may}
+}
+
+
+%
+% Safe Dialect of C
+%
+@inproceedings{Cyclone:ATC02,
+    author = {Jim, Trevor and Morrisett, J. Greg and Grossman, Dan and Hicks, Michael W. and Cheney, James and Wang, Yanling},
+    title = {{Cyclone: A Safe Dialect of C}},
+    booktitle = {Proceedings of the General Track of the Annual Conference on USENIX Annual Technical Conference},
+    series = {ATEC '02},
+    year = {2002},
+    isbn = {1-880446-00-6},
+    pages = {275--288},
+    numpages = {14},
+    url = {http://dl.acm.org/citation.cfm?id=647057.713871},
+    acmid = {713871},
+    publisher = {USENIX Association},
+    address = {Berkeley, CA, USA},
+}
+
+@inproceedings{SafeDrive:OSDI06,
+    author = {Zhou, Feng and Condit, Jeremy and Anderson, Zachary and Bagrak, Ilya and Ennals, Rob and Harren, Matthew and Necula, George and Brewer, Eric and Brewer, Eric and Brewer, Eric},
+    title = {{SafeDrive: Safe and Recoverable Extensions Using Language-based Techniques}},
+    booktitle = {Proceedings of the 7th Symposium on Operating Systems Design and Implementation},
+    series = {OSDI '06},
+    year = {2006},
+    isbn = {1-931971-47-1},
+    location = {Seattle, Washington},
+    pages = {45--60},
+    numpages = {16},
+    url = {http://dl.acm.org/citation.cfm?id=1298455.1298461},
+    acmid = {1298461},
+    publisher = {USENIX Association},
+    address = {Berkeley, CA, USA},
+}
+
+@inproceedings{Deputy:ESOP07,
+    author = {Condit, Jeremy and Harren, Matthew and Anderson, Zachary and Gay, David and Necula, George C.},
+    title = {{Dependent Types for Low-level Programming}},
+    booktitle = {Proceedings of the 16th European Symposium on Programming},
+    series = {ESOP'07},
+    year = {2007},
+    isbn = {978-3-540-71314-2},
+    location = {Braga, Portugal},
+    pages = {520--535},
+    numpages = {16},
+    url = {http://dl.acm.org/citation.cfm?id=1762174.1762221},
+    acmid = {1762221},
+    publisher = {Springer-Verlag},
+    address = {Berlin, Heidelberg},
+}
+
 @INPROCEEDINGS{CheckedC:SecDev18,
     author={A. S. {Elliott} and A. {Ruef} and M. {Hicks} and D. {Tarditi}},
     booktitle={2018 IEEE Cybersecurity Development (SecDev)},
@@ -299,25 +394,27 @@
     isbn="978-3-030-17138-4"
 }
 
-@INPROCEEDINGS {Sanitize:SoK:Oakland19,
-    author = {D. Song and J. Lettner and P. Rajasekaran and Y. Na and S. Volckaert and P. Larsen and M. Franz},
-    booktitle = {2019 2019 IEEE Symposium on Security and Privacy (SP)},
-    title = {{SoK: Sanitizing for Security}},
-    year = {2019},
-    volume = {},
-    issn = {CFP19020-ART},
-    pages = {},
-    keywords = {computer-bugs;security;software-safety;system-software},
-    doi = {10.1109/SP.2019.00010},
-    url = {https://doi.ieeecomputersociety.org/10.1109/SP.2019.00010},
-    publisher = {IEEE Computer Society},
-    address = {Los Alamitos, CA, USA},
-    month = {may}
-}
-
 %--------------------------------------------------------------------------------------------------%
 % Spatial Memory Safety
 %--------------------------------------------------------------------------------------------------%
+@inproceedings{SoftBound:PLDI09,
+    author = {Nagarakatte, Santosh and Zhao, Jianzhou and Martin, Milo M.K. and Zdancewic, Steve},
+    title = {SoftBound: Highly Compatible and Complete Spatial Memory Safety for C},
+    booktitle = {Proceedings of the 30th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+    series = {PLDI '09},
+    year = {2009},
+    isbn = {978-1-60558-392-1},
+    location = {Dublin, Ireland},
+    pages = {245--258},
+    numpages = {14},
+    url = {http://doi.acm.org/10.1145/1542476.1542504},
+    doi = {10.1145/1542476.1542504},
+    acmid = {1542504},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {buffer overflows, c, spatial memory safety},
+}
+
 @inproceedings{CPI:OSDI14,
     author = {Kuznetsov, Volodymyr and Szekeres, L\'{a}szl\'{o} and Payer, Mathias and Candea, George and Sekar, R. and Song, Dawn},
     title = {{Code-pointer Integrity}},
@@ -398,6 +495,166 @@
     url = {https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/carlini},
     publisher = {{USENIX} Association},
 }
+
+%
+% CFI paper
+%
+@inproceedings{CFI:CCS05,
+    author = {Abadi, Mart\'{\i}n and Budiu, Mihai and Erlingsson, \'{U}lfar and Ligatti, Jay},
+    title = {{Control-flow Integrity}},
+    booktitle = {Proceedings of the 12th ACM Conference on Computer and Communications Security},
+    series = {CCS '05},
+    year = {2005},
+    isbn = {1-59593-226-7},
+    location = {Alexandria, VA, USA},
+    pages = {340--353},
+    numpages = {14},
+    url = {http://doi.acm.org/10.1145/1102120.1102165},
+    doi = {10.1145/1102120.1102165},
+    acmid = {1102165},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {binary rewriting, control-flow graph, inlined reference monitors, vulnerabilities},
+}
+
+@INPROCEEDINGS{CCFIR:Oakland13,
+    author={C. {Zhang} and T. {Wei} and Z. {Chen} and L. {Duan} and L. {Szekeres} and S. {McCamant} and D. {Song} and W. {Zou}},
+    booktitle={2013 IEEE Symposium on Security and Privacy},
+    title={{Practical Control Flow Integrity and Randomization for Binary
+        Executables}},
+    year={2013},
+    volume={},
+    number={},
+    pages={559-573},
+    keywords={computer crime;legislation;online front-ends;Web sites;binary executable;control-flow hijacking attack protection;protection method;CCFIR;compact control flow integrity and randomization;CFI adoption;control-transfer instruction;springboard section;on-site target-randomization;ROP;return-into-libc;ASLR;Windows/x86 PE;legal instruction;Web browser;SPEC CPU2000;GCC;Firefox;Security;Layout;Libraries;Runtime;Law;Control systems},
+    doi={10.1109/SP.2013.44},
+    ISSN={1081-6011},
+    month={May},
+}
+
+%
+% Shadow Stack papers
+%
+@inproceedings{ShadowStack:AsiaCCS15,
+    author = {Dang, Thurston H.Y. and Maniatis, Petros and Wagner, David},
+    title = {{The Performance Cost of Shadow Stacks and Stack Canaries}},
+    year = {2015},
+    isbn = {9781450332453},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2714576.2714635},
+    doi = {10.1145/2714576.2714635},
+    booktitle = {Proceedings of the 10th ACM Symposium on Information, Computer and Communications Security},
+    pages = {555–566},
+    numpages = {12},
+    keywords = {shadow stack, stack canary, stack cookie},
+    location = {Singapore, Republic of Singapore},
+    series = {ASIA CCS ’15}
+}
+
+
+%
+% SFI papers
+%
+@inproceedings{SFI:SOSP93,
+    author = {Wahbe, Robert and Lucco, Steven and Anderson, Thomas E. and Graham, Susan L.},
+    title = {{Efficient Software-based Fault Isolation}},
+    booktitle = {Proceedings of the Fourteenth ACM Symposium on Operating Systems Principles},
+    series = {SOSP '93},
+    year = {1993},
+    isbn = {0-89791-632-8},
+    location = {Asheville, North Carolina, USA},
+    pages = {203--216},
+    numpages = {14},
+    url = {http://doi.acm.org/10.1145/168619.168635},
+    doi = {10.1145/168619.168635},
+    acmid = {168635},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+}
+
+
+%
+% Attacks
+%
+@INPROCEEDINGS{OutOfControl:Oakland14,
+    author={E. {Göktas} and E. {Athanasopoulos} and H. {Bos} and G. {Portokalidis}},
+    booktitle={2014 IEEE Symposium on Security and Privacy},
+    title={Out of Control: Overcoming Control-Flow Integrity},
+    year={2014},
+    volume={},
+    number={},
+    pages={575-589},
+    keywords={programming;security of data;control flow integrity;CFI;return oriented programming;code reuse attacks;Internet Explorer;Software;Security;Internet;Programming;Electronic mail;Payloads;Integrated circuits;Control-flow integrity evaluation;code-reuse attack},
+    doi={10.1109/SP.2014.43},
+    ISSN={2375-1207},
+    month={May},
+}
+
+@inproceedings {StitchGadgets:USS14,
+    author = {Lucas Davi and Ahmad-Reza Sadeghi and Daniel Lehmann and Fabian Monrose},
+    title = {{Stitching the Gadgets: On the Ineffectiveness of Coarse-Grained Control-Flow Integrity
+        Protection}},
+    booktitle = {23rd {USENIX} Security Symposium ({USENIX} Security 14)},
+    year = {2014},
+    isbn = {978-1-931971-15-7},
+    address = {San Diego, CA},
+    pages = {401--416},
+    url = {https://www.usenix.org/conference/usenixsecurity14/technical-sessions/presentation/davi},
+    publisher = {{USENIX} Association},
+    month = aug,
+}
+
+@inproceedings {CFBending:USS15,
+    author = {Nicholas Carlini and Antonio Barresi and Mathias Payer and David Wagner and Thomas R. Gross},
+    title = {Control-Flow Bending: On the Effectiveness of Control-Flow Integrity},
+    booktitle = {24th {USENIX} Security Symposium ({USENIX} Security 15)},
+    year = {2015},
+    isbn = {978-1-931971-232},
+    address = {Washington, D.C.},
+    pages = {161--176},
+    url = {https://www.usenix.org/conference/usenixsecurity15/technical-sessions/presentation/carlini},
+    publisher = {{USENIX} Association},
+    month = aug,
+}
+
+@inproceedings{LoseControl:CCS15,
+    author = {Conti, Mauro and Crane, Stephen and Davi, Lucas and Franz, Michael and Larsen, Per and Negro, Marco and Liebchen, Christopher and Qunaibit, Mohaned and Sadeghi, Ahmad-Reza},
+    title = {{Losing Control: On the Effectiveness of Control-Flow Integrity Under Stack Attacks}},
+    booktitle = {Proceedings of the 22Nd ACM SIGSAC Conference on Computer and Communications Security},
+    series = {CCS '15},
+    year = {2015},
+    isbn = {978-1-4503-3832-5},
+    location = {Denver, Colorado, USA},
+    pages = {952--963},
+    numpages = {12},
+    url = {http://doi.acm.org/10.1145/2810103.2813671},
+    doi = {10.1145/2810103.2813671},
+    acmid = {2813671},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {code-reuse attacks, control-flow integrity, stack corruption},
+}
+
+@inproceedings{ControlJujustu:CCS15,
+    author = {Evans, Isaac and Long, Fan and Otgonbaatar, Ulziibayar and Shrobe, Howard and Rinard, Martin and Okhravi, Hamed and Sidiroglou-Douskos, Stelios},
+    title = {{Control Jujutsu: On the Weaknesses of Fine-Grained Control Flow
+        Integrity}},
+    booktitle = {Proceedings of the 22Nd ACM SIGSAC Conference on Computer and Communications Security},
+    series = {CCS '15},
+    year = {2015},
+    isbn = {978-1-4503-3832-5},
+    location = {Denver, Colorado, USA},
+    pages = {901--913},
+    numpages = {13},
+    url = {http://doi.acm.org/10.1145/2810103.2813646},
+    doi = {10.1145/2810103.2813646},
+    acmid = {2813646},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {code reuse, control flow integrity, memory corruption, return-oriented programming},
+}
+
 
 %--------------------------------------------------------------------------------------------------%
 % Temporal Memory Safety
@@ -690,6 +947,24 @@
     keywords = {alias analysis, pointer analysis},
 }
 
+@inproceedings{DSA:PLDI07,
+    author = {Lattner, Chris and Lenharth, Andrew and Adve, Vikram},
+    title = {{Making Context-sensitive Points-to Analysis with Heap Cloning Practical for the Real
+        World}},
+    booktitle = {Proceedings of the 28th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+    series = {PLDI '07},
+    year = {2007},
+    isbn = {978-1-59593-633-2},
+    location = {San Diego, California, USA},
+    pages = {278--289},
+    numpages = {12},
+    url = {http://doi.acm.org/10.1145/1250734.1250766},
+    doi = {10.1145/1250734.1250766},
+    acmid = {1250766},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {context-sensitive, field-sensitive, interprocedural, pointer analysis, recursive data structure, static analysis},
+}
 
 %==================================================================================================%
 % Parallel Computing
@@ -766,4 +1041,23 @@
     publisher = {ACM},
     address = {New York, NY, USA},
     keywords = {dynamic data structures},
+}
+
+@article{GoToHarmful:Dijkstra,
+    author = {Dijkstra, Edsger W.},
+    title = {{Letters to the Editor: Go to Statement Considered Harmful}},
+    year = {1968},
+    issue_date = {March 1968},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {11},
+    number = {3},
+    issn = {0001-0782},
+    url = {https://doi.org/10.1145/362929.362947},
+    doi = {10.1145/362929.362947},
+    journal = {Commun. ACM},
+    month = mar,
+    pages = {147–148},
+    numpages = {2},
+    keywords = {alternative clause, branch instruction, repetitive clause, program sequencing, jump instruction, program intelligibility, go to statement, conditional clause}
 }
