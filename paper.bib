@@ -1007,6 +1007,130 @@
 
 
 %==================================================================================================%
+% Non-volatile Memory
+%==================================================================================================%
+@article{PCM:IBM08,
+    author = {Raoux, S. and Burr, G. W. and Breitwisch, M. J. and Rettner, C. T. and Chen, Y.-C. and Shelby, R. M. and Salinga, M. and Krebs, D. and Chen, S.-H. and Lung, H.-L. and Lam, C. H.},
+    title = {Phase-Change Random Access Memory: A Scalable Technology},
+    year = {2008},
+    issue_date = {July 2008},
+    publisher = {IBM Corp.},
+    address = {USA},
+    volume = {52},
+    number = {4},
+    issn = {0018-8646},
+    url = {https://doi.org/10.1147/rd.524.0465},
+    doi = {10.1147/rd.524.0465},
+    journal = {IBM J. Res. Dev.},
+    month = jul,
+    pages = {465–479},
+    numpages = {15}
+}
+
+@article{NVMSurvey:DAES18,
+    author = {Boukhobza, Jalil and Rubini, St\'{e}phane and Chen, Renhai and Shao, Zili},
+    title = {Emerging {NVM}: A Survey on Architectural Integration and Research Challenges},
+    year = {2017},
+    issue_date = {January 2018},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {23},
+    number = {2},
+    issn = {1084-4309},
+    url = {https://doi.org/10.1145/3131848},
+    doi = {10.1145/3131848},
+    journal = {ACM Trans. Des. Autom. Electron. Syst.},
+    month = nov,
+    articleno = {Article 14},
+    numpages = {32},
+    keywords = {PCM, FeRAM, main memory, MRAM, ReRAM, storage, Non-volatile memory}
+}
+
+%--------------------------------------------------------------------------------------------------%
+% Encryption related
+%--------------------------------------------------------------------------------------------------%
+
+@inproceedings{BLE:DSN10,
+    author = {Kong, Jingfei and Zhou, Huiyang},
+    booktitle={2010 IEEE/IFIP International Conference on Dependable Systems   Networks (DSN)},
+    year = {2010},
+    month = {06},
+    pages = {333-342},
+    title = {Improving Privacy and Lifetime of PCM-based Main Memory},
+    ISSN={2158-3927},
+    doi = {10.1109/DSN.2010.5544298},
+    url = {https://doi.org/10.1109/DSN.2010.5544298}
+}
+
+@inproceedings{iNVMM:ISCA11,
+    author = {Chhabra, Siddhartha and Solihin, Yan},
+    title = {I-NVMM: A Secure Non-Volatile Main Memory System with Incremental Encryption},
+    year = {2011},
+    isbn = {9781450304726},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2000064.2000086},
+    doi = {10.1145/2000064.2000086},
+    booktitle = {Proceedings of the 38th Annual International Symposium on Computer Architecture},
+    pages = {177–188},
+    numpages = {12},
+    keywords = {non-volatile main memory, privacy, security, hardware attacks, incremental encryption},
+    location = {San Jose, California, USA},
+    series = {ISCA ’11}
+}
+
+@inproceedings{DEUCE:ASPLOS15,
+    author = {Young, Vinson and Nair, Prashant J. and Qureshi, Moinuddin K.},
+    title = {DEUCE: Write-Efficient Encryption for Non-Volatile Memories},
+    year = {2015},
+    isbn = {9781450328357},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2694344.2694387},
+    doi = {10.1145/2694344.2694387},
+    booktitle = {Proceedings of the Twentieth International Conference on Architectural Support for Programming Languages and Operating Systems},
+    pages = {33–44},
+    numpages = {12},
+    keywords = {phase change memory, bitflip, security, encryption, NVM},
+    location = {Istanbul, Turkey},
+    series = {ASPLOS ’15}
+}
+
+@inproceedings{SilentShredder:ASPLOS16,
+    author = {Awad, Amro and Manadhata, Pratyusa and Haber, Stuart and Solihin, Yan and Horne, William},
+    title = {Silent Shredder: Zero-Cost Shredding for Secure Non-Volatile Main Memory Controllers},
+    year = {2016},
+    isbn = {9781450340915},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2872362.2872377},
+    doi = {10.1145/2872362.2872377},
+    booktitle = {Proceedings of the Twenty-First International Conference on Architectural Support for Programming Languages and Operating Systems},
+    pages = {263–276},
+    numpages = {14},
+    keywords = {data protection, phase-change memory, keywords encryption, hardware security},
+    location = {Atlanta, Georgia, USA},
+    series = {ASPLOS ’16}
+}
+
+@inproceedings{Osiris:MICRO18,
+    author = {Ye, Mao and Hughes, Clayton and Awad, Amro},
+    title = {Osiris: A Low-Cost Mechanism to Enable Restoration of Secure Non-Volatile Memories},
+    year = {2018},
+    isbn = {9781538662403},
+    publisher = {IEEE Press},
+    url = {https://doi.org/10.1109/MICRO.2018.00040},
+    doi = {10.1109/MICRO.2018.00040},
+    booktitle = {Proceedings of the 51st Annual IEEE/ACM International Symposium on Microarchitecture},
+    pages = {403–415},
+    numpages = {13},
+    keywords = {computer architecture, non-volatile memory, secure architecture, ECC},
+    location = {Fukuoka, Japan},
+    series = {MICRO-51}
+}
+
+
+%==================================================================================================%
 % Others
 %==================================================================================================%
 @ARTICLE{PascalDynDiagose:ITSE1980,
@@ -1060,4 +1184,63 @@
     pages = {147–148},
     numpages = {2},
     keywords = {alternative clause, branch instruction, repetitive clause, program sequencing, jump instruction, program intelligibility, go to statement, conditional clause}
+}
+
+@inproceedings{OTPEnc:MICRO03,
+    author = {Suh, G. Edward and Clarke, Dwaine and Gassend, Blaise and Dijk, Marten van and Devadas, Srinivas},
+    title = {Efficient Memory Integrity Verification and Encryption for Secure Processors},
+    year = {2003},
+    isbn = {076952043X},
+    publisher = {IEEE Computer Society},
+    address = {USA},
+    booktitle = {Proceedings of the 36th Annual IEEE/ACM International Symposium on Microarchitecture},
+    pages = {339},
+    numpages = {12},
+    series = {MICRO 36},
+    url = {https://dl.acm.org/doi/10.5555/956417.956575}
+}
+
+@article{ColdBoot:USS08,
+    author = {Halderman, J. Alex and Schoen, Seth D. and Heninger, Nadia and Clarkson, William and Paul, William and Calandrino, Joseph A. and Feldman, Ariel J. and Appelbaum, Jacob and Felten, Edward W.},
+    title = {Lest We Remember: Cold-Boot Attacks on Encryption Keys},
+    year = {2009},
+    issue_date = {May 2009},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {52},
+    number = {5},
+    issn = {0001-0782},
+    url = {https://doi.org/10.1145/1506409.1506429},
+    doi = {10.1145/1506409.1506429},
+    journal = {Commun. ACM},
+    month = may,
+    pages = {91–98},
+    numpages = {8}
+}
+
+@article{SGXMEE,
+  title={A Memory Encryption Engine Suitable for General Purpose Processors},
+  author={Shay Gueron},
+  journal={IACR Cryptology ePrint Archive},
+  year={2016},
+  volume={2016},
+  pages={204},
+  doi = {10.1109/MSP.2016.124},
+  url = {https://eprint.iacr.org/2016/204.pdf}
+}
+
+
+@inproceedings{SideChannel:ISCA12,
+    author = {Demme, John and Martin, Robert and Waksman, Adam and Sethumadhavan, Simha},
+    title = {Side-Channel Vulnerability Factor: A Metric for Measuring Information Leakage},
+    year = {2012},
+    isbn = {9781450316422},
+    publisher = {IEEE Computer Society},
+    address = {USA},
+    booktitle = {Proceedings of the 39th Annual International Symposium on Computer Architecture},
+    pages = {106–117},
+    numpages = {12},
+    location = {Portland, Oregon},
+    series = {ISCA ’12},
+    url = {https://dl.acm.org/doi/10.1145/2366231.2337172}
 }
