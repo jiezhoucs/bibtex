@@ -156,6 +156,16 @@
     month = May,
 }
 
+@INPROCEEDINGS{BOSurvey:DISCEX00,
+  author={C. {Cowan} and F. {Wagle} and  {Calton Pu} and S. {Beattie} and J. {Walpole}},
+  booktitle={Proceedings DARPA Information Survivability Conference and Exposition. DISCEX'00},
+  title={Buffer overflows: attacks and defenses for the vulnerability of the decade},
+  year={2000},
+  volume={2},
+  number={},
+  pages={119-129 vol.2},
+}
+
 @inproceedings{SekarMemSafe:FSE04,
  author = {Xu, Wei and DuVarney, Daniel C. and Sekar, R.},
  title = {{An Efficient and Backwards-compatible Transformation to Ensure Memory
@@ -174,6 +184,17 @@
  address = {New York, NY, USA},
  keywords = {C, memory safety, program transformation},
 }
+
+@ARTICLE{BOSurvey:Oakland04,
+  author={J. {Pincus} and B. {Baker}},
+  journal={IEEE Security \& Privacy},
+  title={Beyond stack smashing: recent advances in exploiting buffer overruns},
+  year={2004},
+  volume={2},
+  number={4},
+  pages={20-27},
+}
+
 
 @inproceedings{SAFECode:PLDI06,
     author = {Dhurjati, Dinakar and Kowshik, Sumant and Adve, Vikram},
@@ -260,6 +281,18 @@
     address = {Washington, DC, USA},
 }
 
+@inproceedings{MemErrorSurvey:RAID:12,
+    author = {van der Veen, Victor and Dutt-Sharma, Nitish and Cavallaro, Lorenzo and Bos, Herbert},
+    year = {2012},
+    month = {09},
+    pages = {86-106},
+    title = {Memory Errors: The Past, the Present, and the Future},
+    volume = {7462},
+    doi = {10.1007/978-3-642-33338-5_5},
+    booktitle = {The Proceedings of the 15th International Symposium on Research in Attacks,
+        Intrusions and Defenses}
+}
+
 @inproceedings{VirtualGohst:ASPLOS14,
     author = {Criswell, John and Dautenhahn, Nathan and Adve, Vikram},
     title = {{Virtual Ghost: Protecting Applications from Hostile Operating
@@ -281,8 +314,8 @@
 
 @INPROCEEDINGS {Sanitize:SoK:Oakland19,
     author = {D. Song and J. Lettner and P. Rajasekaran and Y. Na and S. Volckaert and P. Larsen and M. Franz},
-    booktitle = {2019 2019 IEEE Symposium on Security and Privacy (SP)},
-    title = {{SoK: Sanitizing for Security}},
+    booktitle = {2019 IEEE Symposium on Security and Privacy (SP)},
+    title = {SoK: Sanitizing for Security},
     year = {2019},
     volume = {},
     issn = {CFP19020-ART},
@@ -982,6 +1015,143 @@
     address = {New York, NY, USA},
     keywords = {context-sensitive, field-sensitive, interprocedural, pointer analysis, recursive data structure, static analysis},
 }
+
+
+%==================================================================================================%
+% Operating Systems
+%==================================================================================================%
+
+@inproceedings{SPIN:SOSP95,
+    author = {Bershad, B. N. and Savage, S. and Pardyak, P. and Sirer, E. G. and Fiuczynski, M. E. and Becker, D. and Chambers, C. and Eggers, S.},
+    title = {Extensibility Safety and Performance in the SPIN Operating System},
+    year = {1995},
+    isbn = {0897917154},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/224056.224077},
+    doi = {10.1145/224056.224077},
+    booktitle = {Proceedings of the Fifteenth ACM Symposium on Operating Systems Principles},
+    pages = {267–283},
+    numpages = {17},
+    location = {Copper Mountain, Colorado, USA},
+    series = {SOSP ’95}
+}
+
+@inproceedings{JXOS:ATC02,
+    author = {Golm, Michael and Felser, Meik and Wawersich, Christian and Klein\"{o}der, J\"{u}rgen},
+    title = {The JX Operating System},
+    year = {2002},
+    isbn = {1880446006},
+    publisher = {USENIX Association},
+    address = {USA},
+    booktitle = {Proceedings of the General Track of the Annual Conference on USENIX Annual Technical Conference},
+    pages = {45–58},
+    numpages = {14},
+    series = {ATEC ’02}
+}
+
+@inproceedings{SingSharp:EuroSys06,
+    author = {F\"{a}hndrich, Manuel and Aiken, Mark and Hawblitzel, Chris and Hodson, Orion and Hunt, Galen and Larus, James R. and Levi, Steven},
+    title = {Language Support for Fast and Reliable Message-Based Communication in Singularity OS},
+    year = {2006},
+    isbn = {1595933220},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1217935.1217953},
+    doi = {10.1145/1217935.1217953},
+    booktitle = {Proceedings of the 1st ACM SIGOPS/EuroSys European Conference on Computer Systems 2006},
+    pages = {177–190},
+    numpages = {14},
+    keywords = {channels, static checking, data ownership, asynchronous communication, protocols},
+    location = {Leuven, Belgium},
+    series = {EuroSys ’06}
+}
+
+@article{Singularity:SOSP07,
+    author = {Hunt, Galen C. and Larus, James R.},
+    title = {Singularity: Rethinking the Software Stack},
+    year = {2007},
+    issue_date = {April 2007},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {41},
+    number = {2},
+    issn = {0163-5980},
+    url = {https://doi.org/10.1145/1243418.1243424},
+    doi = {10.1145/1243418.1243424},
+    journal = {SIGOPS Oper. Syst. Rev.},
+    month = apr,
+    pages = {37–49},
+    numpages = {13},
+    keywords = {sealed process architecture, unsafe code tax, hardware protection domains, operating systems, safe programming languages, program specification, sealed kernel, software-isolated processes (SIPs), program verification, manifest-based programs (MBPs)}
+}
+
+@inproceedings{Mirage:ASPLOS13,
+    author = {Madhavapeddy, Anil and Mortier, Richard and Rotsos, Charalampos and Scott, David and Singh, Balraj and Gazagnaire, Thomas and Smith, Steven and Hand, Steven and Crowcroft, Jon},
+    title = {Unikernels: Library Operating Systems for the Cloud},
+    year = {2013},
+    isbn = {9781450318709},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2451116.2451167},
+    doi = {10.1145/2451116.2451167},
+    booktitle = {Proceedings of the Eighteenth International Conference on Architectural Support for Programming Languages and Operating Systems},
+    pages = {461–472},
+    numpages = {12},
+    keywords = {hypervisor, functional programming, microkernel},
+    location = {Houston, Texas, USA},
+    series = {ASPLOS ’13}
+}
+
+@inproceedings{Tock:SOSP17,
+    author = {Levy, Amit and Campbell, Bradford and Ghena, Branden and Giffin, Daniel B. and Pannuto, Pat and Dutta, Prabal and Levis, Philip},
+    title = {Multiprogramming a 64kB Computer Safely and Efficiently},
+    year = {2017},
+    isbn = {9781450350853},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3132747.3132786},
+    doi = {10.1145/3132747.3132786},
+    booktitle = {Proceedings of the 26th Symposium on Operating Systems Principles},
+    pages = {234–251},
+    numpages = {18},
+    location = {Shanghai, China},
+    series = {SOSP ’17}
+}
+
+@inproceedings{Biscuit:OSDI18,
+    author = {Cutler, Cody and Kaashoek, M. Frans and Morris, Robert T.},
+    title = {The Benefits and Costs of Writing a POSIX Kernel in a High-Level Language},
+    year = {2018},
+    isbn = {9781931971478},
+    publisher = {USENIX Association},
+    address = {USA},
+    booktitle = {Proceedings of the 12th USENIX Conference on Operating Systems Design and Implementation},
+    pages = {89–105},
+    numpages = {17},
+    location = {Carlsbad, CA, USA},
+    series = {OSDI’18}
+}
+
+%==================================================================================================%
+% Programming Languages
+%==================================================================================================%
+@inproceedings{CertifyingCompiler:PLDI98,
+    author = {Necula, George C. and Lee, Peter},
+    title = {The Design and Implementation of a Certifying Compiler},
+    year = {1998},
+    isbn = {0897919874},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/277650.277752},
+    doi = {10.1145/277650.277752},
+    booktitle = {Proceedings of the ACM SIGPLAN 1998 Conference on Programming Language Design and Implementation},
+    pages = {333–344},
+    numpages = {12},
+    location = {Montreal, Quebec, Canada},
+    series = {PLDI ’98}
+}
+
 
 %==================================================================================================%
 % Parallel Computing
