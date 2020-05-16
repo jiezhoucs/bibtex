@@ -230,6 +230,18 @@
     series = {ICSE ’06}
 }
 
+@inproceedings{SpecBasedKernelData:USS06,
+    author = {Petroni, Nick L. and Fraser, Timothy and Walters, AAron and Arbaugh, William A.},
+    title = {An Architecture for Specification-Based Detection of Semantic Integrity Violations in Kernel Dynamic Data},
+    year = {2006},
+    publisher = {USENIX Association},
+    address = {USA},
+    booktitle = {Proceedings of the 15th Conference on USENIX Security Symposium - Volume 15},
+    articleno = {20},
+    numpages = {1},
+    location = {Vancouver, B.C., Canada},
+    series = {USENIX-SS’06}
+}
 
 @inproceedings{SVA:SOSP07,
     author = {Criswell, John and Lenharth, Andrew and Dhurjati, Dinakar and Adve, Vikram},
@@ -250,6 +262,73 @@
     keywords = {compiler, memory safety, operating systems, security, type safety, typed assembly language, virtual machine},
 }
 
+@inproceedings{SecVisor:SOSP07,
+    author = {Seshadri, Arvind and Luk, Mark and Qu, Ning and Perrig, Adrian},
+    title = {SecVisor: A Tiny Hypervisor to Provide Lifetime Kernel Code Integrity for Commodity OSes},
+    year = {2007},
+    isbn = {9781595935915},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1294261.1294294},
+    doi = {10.1145/1294261.1294294},
+    booktitle = {Proceedings of Twenty-First ACM SIGOPS Symposium on Operating Systems Principles},
+    pages = {335–350},
+    numpages = {16},
+    keywords = {preventing, hypervisor, code attestation, code injection attacks, memory virtualization, code integrity},
+    location = {Stevenson, Washington, USA},
+    series = {SOSP ’07}
+}
+
+@inproceedings{SBCFI:CCS07,
+    author = {Petroni, Nick L. and Hicks, Michael},
+    title = {Automated Detection of Persistent Kernel Control-Flow Attacks},
+    year = {2007},
+    isbn = {9781595937032},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1315245.1315260},
+    doi = {10.1145/1315245.1315260},
+    booktitle = {Proceedings of the 14th ACM Conference on Computer and Communications Security},
+    pages = {103–115},
+    numpages = {13},
+    keywords = {CFI, virtualization, kernel, integrity, rootkit},
+    location = {Alexandria, Virginia, USA},
+    series = {CCS ’07}
+}
+
+@inproceedings{SBCFI:CCS07,
+    author = {Petroni, Nick L. and Hicks, Michael},
+    title = {Automated Detection of Persistent Kernel Control-Flow Attacks},
+    year = {2007},
+    isbn = {9781595937032},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1315245.1315260},
+    doi = {10.1145/1315245.1315260},
+    booktitle = {Proceedings of the 14th ACM Conference on Computer and Communications Security},
+    pages = {103–115},
+    numpages = {13},
+    keywords = {CFI, virtualization, kernel, integrity, rootkit},
+    location = {Alexandria, Virginia, USA},
+    series = {CCS ’07}
+}
+
+@inproceedings{Gibraltar:ACSAC08,
+    author = {Baliga, Arati and Ganapathy, Vinod and Iftode, Liviu},
+    title = {Automatic Inference and Enforcement of Kernel Data Structure Invariants},
+    year = {2008},
+    isbn = {9780769534473},
+    publisher = {IEEE Computer Society},
+    address = {USA},
+    url = {https://doi.org/10.1109/ACSAC.2008.29},
+    doi = {10.1109/ACSAC.2008.29},
+    booktitle = {Proceedings of the 2008 Annual Computer Security Applications Conference},
+    pages = {77–86},
+    numpages = {10},
+    keywords = {rootkits, kernel, data structures, invariants, automatic, non-control data, inference},
+    series = {ACSAC ’08}
+}
+
 @inproceedings{SVAOS:USS09,
     author = {Criswell, John and Geoffray, Nicolas and Adve, Vikram},
     title = {{Memory Safety for Low-level Software/Hardware Interactions}},
@@ -263,6 +342,36 @@
     acmid = {1855774},
     publisher = {USENIX Association},
     address = {Berkeley, CA, USA},
+}
+
+@inproceedings{KOL:CCS09,
+    author = {Carbone, Martim and Cui, Weidong and Lu, Long and Lee, Wenke and Peinado, Marcus and Jiang, Xuxian},
+    title = {Mapping Kernel Objects to Enable Systematic Integrity Checking},
+    year = {2009},
+    isbn = {9781605588940},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1653662.1653729},
+    doi = {10.1145/1653662.1653729},
+    booktitle = {Proceedings of the 16th ACM Conference on Computer and Communications Security},
+    pages = {555–565},
+    numpages = {11},
+    keywords = {memory analysis, pointer analysis, malware, introspection, kernel integrity},
+    location = {Chicago, Illinois, USA},
+    series = {CCS ’09}
+}
+
+@inproceedings{kGuard:USS12,
+    author = {Kemerlis, Vasileios P. and Portokalidis, Georgios and Keromytis, Angelos D.},
+    title = {KGuard: Lightweight Kernel Protection against Return-to-User Attacks},
+    year = {2012},
+    publisher = {USENIX Association},
+    address = {USA},
+    booktitle = {Proceedings of the 21st USENIX Conference on Security Symposium},
+    pages = {39},
+    numpages = {1},
+    location = {Bellevue, WA},
+    series = {Security’12}
 }
 
 @inproceedings{EternalWar:Oakland13,
@@ -310,6 +419,15 @@
     publisher = {ACM},
     address = {New York, NY, USA},
     keywords = {control-flow integrity, inlined reference monitors, malicious operating systems, software fault isolation, software security},
+}
+
+@inproceedings{KENALI:NDSS16,
+  title        = {Enforcing Kernel Security Invariants with Data Flow Integrity},
+  author       = {Chengyu Song and Byoungyoung Lee and Kangjie Lu and William R. Harris and Taesoo Kim and Wenke Lee},
+  booktitle    = {Proceedings of the 2016 Annual Network and Distributed System Security Symposium (NDSS)},
+  month        = feb,
+  year         = 2016,
+  address      = {San Diego, CA},
 }
 
 @INPROCEEDINGS {Sanitize:SoK:Oakland19,
@@ -583,6 +701,40 @@
 }
 
 %
+% Software Fault Isolation (SFI) papers
+%
+@inproceedings{SFI:SOSP93,
+    author = {Wahbe, Robert and Lucco, Steven and Anderson, Thomas E. and Graham, Susan L.},
+    title = {{Efficient Software-based Fault Isolation}},
+    booktitle = {Proceedings of the Fourteenth ACM Symposium on Operating Systems Principles},
+    series = {SOSP '93},
+    year = {1993},
+    isbn = {0-89791-632-8},
+    location = {Asheville, North Carolina, USA},
+    pages = {203--216},
+    numpages = {14},
+    url = {http://doi.acm.org/10.1145/168619.168635},
+    doi = {10.1145/168619.168635},
+    acmid = {168635},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+}
+
+@inproceedings{XFI:OSDI06,
+    author = {Erlingsson, \'{U}lfar and Abadi, Mart\'{\i}n and Vrable, Michael and Budiu, Mihai and Necula, George C.},
+    title = {{XFI}: Software Guards for System Address Spaces},
+    year = {2006},
+    isbn = {1931971471},
+    publisher = {USENIX Association},
+    address = {USA},
+    booktitle = {Proceedings of the 7th Symposium on Operating Systems Design and Implementation},
+    pages = {75–88},
+    numpages = {14},
+    location = {Seattle, Washington},
+    series = {OSDI ’06}
+}
+
+%
 % Shadow Stack papers
 %
 @inproceedings{ShadowStack:AsiaCCS15,
@@ -600,27 +752,6 @@
     keywords = {shadow stack, stack canary, stack cookie},
     location = {Singapore, Republic of Singapore},
     series = {ASIA CCS ’15}
-}
-
-
-%
-% SFI papers
-%
-@inproceedings{SFI:SOSP93,
-    author = {Wahbe, Robert and Lucco, Steven and Anderson, Thomas E. and Graham, Susan L.},
-    title = {{Efficient Software-based Fault Isolation}},
-    booktitle = {Proceedings of the Fourteenth ACM Symposium on Operating Systems Principles},
-    series = {SOSP '93},
-    year = {1993},
-    isbn = {0-89791-632-8},
-    location = {Asheville, North Carolina, USA},
-    pages = {203--216},
-    numpages = {14},
-    url = {http://doi.acm.org/10.1145/168619.168635},
-    doi = {10.1145/168619.168635},
-    acmid = {168635},
-    publisher = {ACM},
-    address = {New York, NY, USA},
 }
 
 
