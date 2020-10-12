@@ -146,23 +146,38 @@
     keywords = {memory access checking, multiprocessor workstations, program slicing},
 }
 
-@inproceedings{JKBoundsChecking:AADEBUG97,
+@inproceedings{JKBoundsCheck:AADEBUG97,
     author = {Richard W M Jones and Paul H J Kelly},
-    title = {{Backwards-compatible bounds checking for arrays and pointers in C programs}},
+    title = {Backwards-compatible Bounds Checking for Arrays and Pointers in C Programs},
     booktitle = {Proceedings of the Third International Workshop on Automated Debugging},
     location = {Linköping, Sweden},
     year = {1997},
     month = May,
+    url = {https://dl.acm.org/doi/10.1145/1134285.1134309},
 }
 
-@INPROCEEDINGS{BOSurvey:DISCEX00,
+@INPROCEEDINGS{MemSafetySurvey:DISCEX00,
   author={C. {Cowan} and F. {Wagle} and  {Calton Pu} and S. {Beattie} and J. {Walpole}},
   booktitle={Proceedings DARPA Information Survivability Conference and Exposition. DISCEX'00},
-  title={Buffer overflows: attacks and defenses for the vulnerability of the decade},
+  title={Buffer Overflows: Attacks and Defenses for the Vulnerability of the Decade},
   year={2000},
   volume={2},
   number={},
   pages={119-129 vol.2},
+  url = {https://ieeexplore.ieee.org/document/821514},
+}
+
+@inproceedings {ASan:ATC02,
+    author = {Konstantin Serebryany and Derek Bruening and Alexander Potapenko and Dmitriy Vyukov},
+    title = {AddressSanitizer: A Fast Address Sanity Checker},
+    booktitle = {2012 {USENIX} Annual Technical Conference ({USENIX} {ATC} 12)},
+    year = {2012},
+    isbn = {978-931971-93-5},
+    address = {Boston, MA},
+    pages = {309--318},
+    url = {https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany},
+    publisher = {{USENIX} Association},
+    month = jun,
 }
 
 @inproceedings{SekarMemSafe:FSE04,
@@ -184,14 +199,15 @@
  keywords = {C, memory safety, program transformation},
 }
 
-@ARTICLE{BOSurvey:Oakland04,
+@ARTICLE{MemAttackSurvey:Oakland04,
   author={J. {Pincus} and B. {Baker}},
   journal={IEEE Security \& Privacy},
-  title={Beyond stack smashing: recent advances in exploiting buffer overruns},
+  title={Beyond Stack Smashing: Recent Advances in Exploiting Buffer Overruns},
   year={2004},
   volume={2},
   number={4},
   pages={20-27},
+  url = {https://ieeexplore.ieee.org/document/1324594},
 }
 
 
@@ -463,6 +479,26 @@
   address      = {San Diego, CA},
 }
 
+@inproceedings{Sulong:ASPLOS18,
+    author = {Rigger, Manuel and Schatz, Roland and Mayrhofer, Ren\'{e} and Grimmer,
+        Matthias and M\"{o}ssenb\"{o}ck, Hanspeter},
+        title = {Sulong, and Thanks for All the Bugs:
+            Finding Errors in C Programs by Abstracting from the Native Execution Model},
+        year = {2018},
+        isbn = {9781450349116},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3173162.3173174},
+        doi = {10.1145/3173162.3173174},
+        booktitle = {Proceedings of the Twenty-Third International Conference on Architectural
+            Support for Programming Languages and Operating Systems},
+        pages = {377–391},
+        numpages = {15},
+        keywords = {sulong, memory errors, bug detection, C},
+        location = {Williamsburg, VA, USA},
+        series = {ASPLOS '18}
+}
+
 @INPROCEEDINGS {Sanitize:SoK:Oakland19,
     author = {D. Song and J. Lettner and P. Rajasekaran and Y. Na and S. Volckaert and P. Larsen and M. Franz},
     booktitle = {2019 IEEE Symposium on Security and Privacy (SP)},
@@ -477,6 +513,54 @@
     publisher = {IEEE Computer Society},
     address = {Los Alamitos, CA, USA},
     month = {may}
+}
+
+%--------------------------------------------------------------------------------------------------%
+% Safe Implementation
+%--------------------------------------------------------------------------------------------------%
+
+@inproceedings{Mudflap:GCCDev03,
+  title={Mudflap: Pointer use checking for C/C},
+  author={Frank Ch. Eigler},
+  year={2003}
+}
+
+%--------------------------------------------------------------------------------------------------%
+% Program Analysis
+%--------------------------------------------------------------------------------------------------%
+
+@inproceedings{DART:PLDI05,
+    author = {Godefroid, Patrice and Klarlund, Nils and Sen, Koushik},
+    title = {DART: Directed Automated Random Testing},
+    year = {2005},
+    isbn = {1595930566},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1065010.1065036},
+    doi = {10.1145/1065010.1065036},
+    booktitle = {Proceedings of the 2005 ACM SIGPLAN Conference on Programming Language Design and Implementation},
+    pages = {213–223},
+    numpages = {11},
+    keywords = {interfaces, program verification, random testing, software testing, automated test generation},
+    location = {Chicago, IL, USA},
+    series = {PLDI '05}
+}
+
+@inproceedings{SVF:CC16,
+    author = {Sui, Yulei and Xue, Jingling},
+    title = {SVF: Interprocedural Static Value-Flow Analysis in LLVM},
+    year = {2016},
+    isbn = {9781450342414},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2892208.2892235},
+    doi = {10.1145/2892208.2892235},
+    booktitle = {Proceedings of the 25th International Conference on Compiler Construction},
+    pages = {265–266},
+    numpages = {2},
+    keywords = {SVF, Value-Flow, Pointer Analysis},
+    location = {Barcelona, Spain},
+    series = {CC 2016}
 }
 
 
@@ -515,6 +599,22 @@
     series = {CASES ’02}
 }
 
+@inproceedings{CCured:POPL02,
+    author = {Necula, George C. and McPeak, Scott and Weimer, Westley},
+    title = {CCured: Type-Safe Retrofitting of Legacy Code},
+    year = {2002},
+    isbn = {1581134509},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/503272.503286},
+    doi = {10.1145/503272.503286},
+    booktitle = {Proceedings of the 29th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+    pages = {128–139},
+    numpages = {12},
+    location = {Portland, Oregon},
+    series = {POPL '02}
+}
+
 @inproceedings{SafeDrive:OSDI06,
     author = {Zhou, Feng and Condit, Jeremy and Anderson, Zachary and Bagrak, Ilya and Ennals, Rob and Harren, Matthew and Necula, George and Brewer, Eric and Brewer, Eric and Brewer, Eric},
     title = {SafeDrive: Safe and Recoverable Extensions Using Language-based Techniques},
@@ -546,23 +646,6 @@
     publisher = {Springer-Verlag},
     address = {Berlin, Heidelberg},
 }
-
-@inproceedings{CCured:POPL02,
-    author = {Necula, George C. and McPeak, Scott and Weimer, Westley},
-    title = {CCured: Type-Safe Retrofitting of Legacy Code},
-    year = {2002},
-    isbn = {1581134509},
-    publisher = {Association for Computing Machinery},
-    address = {New York, NY, USA},
-    url = {https://doi.org/10.1145/503272.503286},
-    doi = {10.1145/503272.503286},
-    booktitle = {Proceedings of the 29th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
-    pages = {128–139},
-    numpages = {12},
-    location = {Portland, Oregon},
-    series = {POPL '02}
-}
-
 
 @INPROCEEDINGS{CheckedC:SecDev18,
     author={A. S. {Elliott} and A. {Ruef} and M. {Hicks} and D. {Tarditi}},
@@ -596,19 +679,6 @@
     publisher="Springer International Publishing",
     address="Cham",
     pages="76--98",
-    abstract="Checked C is a new effort working toward a memory-safe C. Its design is distinguished from
-        that of prior efforts by truly being an extension of C: Every C program is also a Checked C
-        program. Thus, one may make incremental safety improvements to existing codebases while
-        retaining backward compatibility. This paper makes two contributions. First, to help developers
-        convert existing C code to use so-called checked (i.e., safe) pointers, we have developed a
-        preliminary, automated porting tool. Notably, this tool takes advantage of the flexibility of
-        Checked C's design: The tool need not perfectly classify every pointer, as required of prior
-        all-or-nothing efforts. Rather, it can make a best effort to convert more pointers accurately,
-    without letting inaccuracies inhibit compilation. However, such partial conversion raises the
-        question: If safety violations can still occur, what sort of advantage does using Checked C
-        provide? We draw inspiration from research on migratory typing to make our second contribution:
-        We prove a blame property that renders so-called checked regions blameless of any run-time
-        failure. We formalize this property for a core calculus and mechanize the proof in Coq.",
     isbn="978-3-030-17138-4"
 }
 
@@ -632,6 +702,20 @@
     address = {New York, NY, USA},
     keywords = {buffer overflows, c, spatial memory safety},
 }
+
+@inproceedings{BaggyBounds:Sec09,
+    author = {Akritidis, Periklis and Costa, Manuel and Castro, Miguel and Hand, Steven},
+    title = {Baggy Bounds Checking: An Efficient and Backwards-Compatible Defense against out-of-Bounds Errors},
+    year = {2009},
+    publisher = {USENIX Association},
+    address = {USA},
+    booktitle = {Proceedings of the 18th Conference on USENIX Security Symposium},
+    pages = {51–66},
+    numpages = {16},
+    location = {Montreal, Canada},
+    series = {SSYM'09}
+}
+
 
 @inproceedings{CPI:OSDI14,
     author = {Kuznetsov, Volodymyr and Szekeres, L\'{a}szl\'{o} and Payer, Mathias and Candea, George and Sekar, R. and Song, Dawn},
@@ -750,8 +834,12 @@
     month={May},
 }
 
+%--------------------------------------------------------------------------------------------------%
+% Address Isolation
+%--------------------------------------------------------------------------------------------------%
+
 %
-% Software Fault Isolation (SFI) papers
+% Software Fault Isolation (SFI)
 %
 @inproceedings{SFI:SOSP93,
     author = {Wahbe, Robert and Lucco, Steven and Anderson, Thomas E. and Graham, Susan L.},
@@ -783,6 +871,25 @@
     location = {Seattle, Washington},
     series = {OSDI ’06}
 }
+
+@inproceedings{CFISandboxing:CCS11,
+    author = {Zeng, Bin and Tan, Gang and Morrisett, Greg},
+    title = {Combining Control-Flow Integrity and Static Analysis for Efficient and Validated Data Sandboxing},
+    year = {2011},
+    isbn = {9781450309486},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2046707.2046713},
+    doi = {10.1145/2046707.2046713},
+    booktitle = {Proceedings of the 18th ACM Conference on Computer and Communications Security},
+    pages = {29–40},
+    numpages = {12},
+    keywords = {binary rewriting, inlined reference monitors, control-flow integrity, static analysis},
+    location = {Chicago, Illinois, USA},
+    series = {CCS '11}
+}
+
+%--------------------------------------------------------------------------------------------------%
 
 %
 % Shadow Stack papers
@@ -1327,6 +1434,47 @@
 %==================================================================================================%
 % Programming Languages
 %==================================================================================================%
+
+%
+% C related
+%
+
+@inproceedings{DepthsOfC:PLDI16,
+    author = {Memarian, Kayvan and Matthiesen, Justus and Lingard, James and Nienhuis, Kyndylan and Chisnall, David and Watson, Robert N. M. and Sewell, Peter},
+    title = {Into the Depths of C: Elaborating the de Facto Standards},
+    year = {2016},
+    isbn = {9781450342612},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2908080.2908081},
+    doi = {10.1145/2908080.2908081},
+    booktitle = {Proceedings of the 37th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+    pages = {1–15},
+    numpages = {15},
+    keywords = {C},
+    location = {Santa Barbara, CA, USA},
+    series = {PLDI '16}
+}
+
+@article{CSemantics:POPL19,
+    author = {Memarian, Kayvan and Gomes, Victor B. F. and Davis, Brooks and Kell, Stephen and Richardson, Alexander and Watson, Robert N. M. and Sewell, Peter},
+    title = {Exploring C Semantics and Pointer Provenance},
+    year = {2019},
+    issue_date = {January 2019},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {3},
+    number = {POPL},
+    url = {https://doi.org/10.1145/3290380},
+    doi = {10.1145/3290380},
+    journal = {Proc. ACM Program. Lang.},
+    month = jan,
+    articleno = {67},
+    numpages = {32},
+    keywords = {C}
+}
+
+
 
 @ARTICLE{UWPascal:IEEEToSE80,
   author={C. N. {Fischer} and R. J. {LeBlanc}},
