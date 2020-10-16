@@ -110,7 +110,69 @@
 %==================================================================================================%
 % Memory Safety
 %==================================================================================================%
-@inproceedings{SafePtr:PLDI94,
+
+%--------------------------------------------------------------------------------------------------%
+% Static Analysis
+%--------------------------------------------------------------------------------------------------%
+
+@article{StaticAnalyzer:SPE00,
+    author = {Bush, William R. and Pincus, Jonathan D. and Sielaff, David J.},
+    title = {A Static Analyzer for Finding Dynamic Programming Errors},
+    year = {2000},
+    issue_date = {June 2000},
+    publisher = {John Wiley & Sons, Inc.},
+    address = {USA},
+    volume = {30},
+    number = {7},
+    issn = {0038-0644},
+    url = {https://doi.org/10.1002/(SICI)1097-024X(200006)30:7%3C775::AID-SPE309%3E3.0.CO;2-H},
+    doi = {10.1002/(SICI)1097-024X(200006)30:7%3C775::AID-SPE309%3E3.0.CO;2-H},
+    journal = {Softw. Pract. Exper.},
+    month = jun,
+    pages = {775–802},
+    numpages = {28},
+    keywords = {program analysis, program error checking}
+}
+
+@inproceedings{StaticAnalyzer:PLDI03,
+    author = {Blanchet, Bruno and Cousot, Patrick and Cousot, Radhia and Feret, J\'{e}rome and Mauborgne, Laurent and Min\'{e}, Antoine and Monniaux, David and Rival, Xavier},
+    title = {A Static Analyzer for Large Safety-Critical Software},
+    year = {2003},
+    isbn = {1581136625},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/781131.781153},
+    doi = {10.1145/781131.781153},
+    booktitle = {Proceedings of the ACM SIGPLAN 2003 Conference on Programming Language Design and Implementation},
+    pages = {196–207},
+    numpages = {12},
+    keywords = {safety-critical software, abstract interpretation, floating point, abstract domains, reactive, static analysis, embedded, verification, real-time},
+    location = {San Diego, California, USA},
+    series = {PLDI '03}
+}
+
+@inproceedings{ModularChecker:ICSE06,
+    author = {Hackett, Brian and Das, Manuvir and Wang, Daniel and Yang, Zhe},
+    title = {Modular Checking for Buffer Overflows in the Large},
+    year = {2006},
+    isbn = {1595933751},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1134285.1134319},
+    doi = {10.1145/1134285.1134319},
+    booktitle = {Proceedings of the 28th International Conference on Software Engineering},
+    pages = {232–241},
+    numpages = {10},
+    keywords = {modular analysis, annotation design, annotation inference, buffer overflows},
+    location = {Shanghai, China},
+    series = {ICSE '06}
+}
+
+%--------------------------------------------------------------------------------------------------%
+% End of Static Analysis
+%--------------------------------------------------------------------------------------------------%
+
+@inproceedings{SafeC:PLDI94,
     author = {Austin, Todd M. and Breach, Scott E. and Sohi, Gurindar S.},
     title = {{Efficient Detection of All Pointer and Array Access Errors}},
     booktitle = {Proceedings of the ACM SIGPLAN 1994 Conference on Programming Language Design and Implementation},
@@ -499,7 +561,7 @@
         series = {ASPLOS '18}
 }
 
-@INPROCEEDINGS {Sanitize:SoK:Oakland19,
+@INPROCEEDINGS {SanitizerSoK:Oakland19,
     author = {D. Song and J. Lettner and P. Rajasekaran and Y. Na and S. Volckaert and P. Larsen and M. Franz},
     booktitle = {2019 IEEE Symposium on Security and Privacy (SP)},
     title = {SoK: Sanitizing for Security},
@@ -524,6 +586,56 @@
   author={Frank Ch. Eigler},
   year={2003}
 }
+
+@inproceedings{CUP:AsiaCCS18,
+    author = {Burow, Nathan and McKee, Derrick and Carr, Scott A. and Payer, Mathias},
+    title = {CUP: Comprehensive User-Space Protection for C/C++},
+    year = {2018},
+    isbn = {9781450355766},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3196494.3196540},
+    doi = {10.1145/3196494.3196540},
+    booktitle = {Proceedings of the 2018 on Asia Conference on Computer and Communications Security},
+    pages = {381–392},
+    numpages = {12},
+    keywords = {temporal memory safety, sanitizer, application security, memory safety, spatial memory safety},
+    location = {Incheon, Republic of Korea},
+    series = {ASIACCS '18}
+}
+
+%--------------------------------------------------------------------------------------------------%
+% End of Safe Implementation
+%--------------------------------------------------------------------------------------------------%
+
+%--------------------------------------------------------------------------------------------------%
+% Mitigations
+%--------------------------------------------------------------------------------------------------%
+
+@article{CFISurvey:CSUR17,
+    author = {Burow, Nathan and Carr, Scott A. and Nash, Joseph and Larsen, Per and Franz, Michael and Brunthaler, Stefan and Payer, Mathias},
+    title = {Control-Flow Integrity: Precision, Security, and Performance},
+    year = {2017},
+    issue_date = {April 2017},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {50},
+    number = {1},
+    issn = {0360-0300},
+    url = {https://doi.org/10.1145/3054924},
+    doi = {10.1145/3054924},
+    journal = {ACM Comput. Surv.},
+    month = apr,
+    articleno = {16},
+    numpages = {33},
+    keywords = {shadow stack, control-flow hijacking, return-oriented programming, Control-flow integrity}
+}
+
+
+%--------------------------------------------------------------------------------------------------%
+% End of Mitigations
+%--------------------------------------------------------------------------------------------------%
+
 
 %--------------------------------------------------------------------------------------------------%
 % Program Analysis
@@ -858,6 +970,17 @@
     address = {New York, NY, USA},
 }
 
+@inproceedings {CISCSFI:Sec06,
+    author = {Stephen McCamant and Greg Morrisett},
+    title = {Evaluating {SFI} for a {CISC} Architecture},
+    booktitle = {15th {USENIX} Security Symposium ({USENIX} Security 06)},
+    year = {2006},
+    address = {Vancouver, B.C. Canada},
+    url = {https://www.usenix.org/conference/15th-usenix-security-symposium/evaluating-sfi-cisc-architecture},
+    publisher = {{USENIX} Association},
+    month = jul,
+}
+
 @inproceedings{XFI:OSDI06,
     author = {Erlingsson, \'{U}lfar and Abadi, Mart\'{\i}n and Vrable, Michael and Budiu, Mihai and Necula, George C.},
     title = {{XFI}: Software Guards for System Address Spaces},
@@ -891,9 +1014,11 @@
 
 %--------------------------------------------------------------------------------------------------%
 
-%
+
+%--------------------------------------------------------------------------------------------------%
 % Shadow Stack papers
-%
+%--------------------------------------------------------------------------------------------------%
+
 @inproceedings{ShadowStack:AsiaCCS15,
     author = {Dang, Thurston H.Y. and Maniatis, Petros and Wagner, David},
     title = {{The Performance Cost of Shadow Stacks and Stack Canaries}},
@@ -910,6 +1035,21 @@
     location = {Singapore, Republic of Singapore},
     series = {ASIA CCS ’15}
 }
+
+@INPROCEEDINGS{ShadowStackSoK:Oakland19,
+  author={Nathan {Burow} and Xinping {Zhang} and Mathias {Payer}},
+  booktitle={2019 IEEE Symposium on Security and Privacy (SP)},
+  title={SoK: Shining Light on Shadow Stacks},
+  year={2019},
+  volume={},
+  number={},
+  pages={985-999},
+}
+
+
+%--------------------------------------------------------------------------------------------------%
+% End of Shadow Stack papers
+%--------------------------------------------------------------------------------------------------%
 
 
 %
