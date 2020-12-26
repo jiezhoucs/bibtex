@@ -714,6 +714,23 @@
     address = {Berkeley, CA, USA},
 }
 
+@inproceedings{Cyclone:ISMM04,
+    author = {Hicks, Michael and Morrisett, Greg and Grossman, Dan and Jim, Trevor},
+    title = {Experience with Safe Manual Memory-Management in Cyclone},
+    year = {2004},
+    isbn = {1581139454},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1029873.1029883},
+    doi = {10.1145/1029873.1029883},
+    booktitle = {Proceedings of the 4th International Symposium on Memory Management},
+    pages = {73–84},
+    numpages = {12},
+    keywords = {cyclone, unique pointers, regions, memory safety, memory management},
+    location = {Vancouver, BC, Canada},
+    series = {ISMM '04}
+}
+
 @inproceedings{ControlC:CASES02,
     author = {Kowshik, Sumant and Dhurjati, Dinakar and Adve, Vikram},
     title = {Ensuring Code Safety without Runtime Checks for Real-Time Control Systems},
@@ -1906,6 +1923,66 @@
     address = {Berlin, Heidelberg},
 }
 
+%==================================================================================================%
+% Static Analysis on Multithreading Programs
+%==================================================================================================%
+
+@InProceedings{SAMultiT:SAS01,
+    author="Rinard, Martin",
+    editor="Cousot, Patrick",
+    title="Analysis of Multithreaded Programs",
+    booktitle="Static Analysis",
+    year="2001",
+    publisher="Springer Berlin Heidelberg",
+    address="Berlin, Heidelberg",
+    pages="1--19",
+    isbn="978-3-540-47764-8"
+}
+
+
+
+@inproceedings{StaticDRJava:PLDI06,
+    author = {Naik, Mayur and Aiken, Alex and Whaley, John},
+    title = {Effective Static Race Detection for Java},
+    year = {2006},
+    isbn = {1595933204},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1133981.1134018},
+    doi = {10.1145/1133981.1134018},
+    abstract = {We present a novel technique for static race detection in Java programs, comprised of a series of stages that employ a combination of static analyses to successively reduce the pairs of memory accesses potentially involved in a race. We have implemented our technique and applied it to a suite of multi-threaded Java programs. Our experiments show that it is precise, scalable, and useful, reporting tens to hundreds of serious and previously unknown concurrency bugs in large, widely-used programs with few false alarms.},
+    booktitle = {Proceedings of the 27th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+    pages = {308–319},
+    numpages = {12},
+    keywords = {concurrency, static race detection, multi-threading, synchronization, Java},
+    location = {Ottawa, Ontario, Canada},
+    series = {PLDI '06}
+}
+
+@article{LOCKSMITH:TOPLS11,
+    author = {Pratikakis, Polyvios and Foster, Jeffrey S. and Hicks, Michael},
+    title = {LOCKSMITH: Practical Static Race Detection for C},
+    year = {2011},
+    issue_date = {January 2011},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {33},
+    number = {1},
+    issn = {0164-0925},
+    url = {https://doi.org/10.1145/1889997.1890000},
+    doi = {10.1145/1889997.1890000},
+    journal = {ACM Trans. Program. Lang. Syst.},
+    month = jan,
+    articleno = {3},
+    numpages = {55},
+    keywords = {static analysis, Data race, race detection, Locksmith, sharing analysis, contextual effects, context sensitivity, correlation inference}
+}
+
+
+
+%==================================================================================================%
+% End of Parallel Computing
+%==================================================================================================%
 
 %==================================================================================================%
 % Non-volatile Memory
