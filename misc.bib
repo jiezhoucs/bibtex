@@ -16,6 +16,17 @@
     note = "\url{https://linux.die.net/man/3/efence}"
 }
 
+@article{StackSmash:Phrack96,
+  author = {{Aleph One}},
+  title = {Smashing the Stack for Fun and Profit},
+  journal = {Phrack Magazine},
+  year = {1996},
+  month = {November},
+  volume = {49},
+  number = {14},
+  url = {http://www.phrack.org/issues/49/14.html},
+}
+
 @article{HeapFengshui:Blackhat07,
     author = {Alexander Sotirov},
     title = {{Heap Feng Shui in JavaScript}},
@@ -188,9 +199,99 @@
     url = {https://www.openbsd.org/papers/eurobsdcon2009/otto-malloc.pdf}
 }
 
+@misc{ArmMTE:2019,
+    author = {Arm Holdings},
+    title = {Armv8.5-A Memory Tagging Extension},
+    year = 2019,
+    volumn = {White Paper},
+    url = {https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/Arm_Memory_Tagging_Extension_Whitepaper.pdf}
+}
+
+
+@online{Microsoft:Sphere,
+  key = {Microsoft},
+  title = {{Azure Sphere}},
+  url = {https://azure.microsoft.com/en-us/services/azure-sphere},
+  note = {\url{https://azure.microsoft.com/en-us/services/azure-sphere}},
+}
+
+@online{FreeRTOS:Amazon,
+  key = {AWS},
+  title = {{Amazon FreeRTOS}},
+  url = {https://aws.amazon.com/freertos},
+  note = {\url{https://aws.amazon.com/freertos}},
+}
+
+@incollection{AutoAttack:BlackHat14,
+  author = {Miller, Charlie and Valasek, Chris},
+  title = {A Survey of Remote Automotive Attack Surfaces},
+  booktitle = {Black Hat USA},
+  year = {2014},
+}
+
+@incollection{Thermostat:BlackHat14,
+  author = {Jin, Yier and Hernandez, Grant and Buentello, Daniel},
+  title = {Smart {Nest Thermostat}: A Smart Spy in Your Home},
+  booktitle = {Black Hat USA},
+  year = {2014},
+}
+
+@online{TI:Halcogen,
+  key = {TI},
+  author = {{Texas Instruments}},
+  title = {Hardware Abstraction Layer Code Generator for {Hercules} {MCUs}},
+  year = {2019},
+  url = {https://www.ti.com/tool/HALCOGEN},
+  note = {\url{https://www.ti.com/tool/HALCOGEN}},
+}
+
+@online{ComputedGoTo:GNU,
+  key = {GNU},
+  author = {{GNU Project}},
+  title = {Label as Values},
+  url = {https://gcc.gnu.org/onlinedocs/gcc/Labels-as-Values.html},
+  note = {\url{https://gcc.gnu.org/onlinedocs/gcc/Labels-as-Values.html}},
+}
+
+@online{ARMv8.1ANewFeature,
+  key = {ARM},
+  title = {The {ARMv8-A} Architecture and Its Ongoing Development},
+  year = {2014},
+  url = {https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/the-armv8-a-architecture-and-its-ongoing-development},
+  note = {\url{https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/the-armv8-a-architecture-and-its-ongoing-development}},
+}
+
+@online{ARMuVisor,
+  key = {ARM},
+  title = {{Mbed $\mu$Visor}},
+  url = {https://www.mbed.com/en/technologies/security/uvisor},
+  note = {\url{https://www.mbed.com/en/technologies/security/uvisor}},
+}
+
+@online{Newlib,
+  key = {Newlib},
+  title = {Newlib},
+  url = {https://sourceware.org/newlib},
+  note = {\url{https://sourceware.org/newlib}},
+}
+
+@online{AndroidStackSize,
+  key = {Android},
+  title = {Verifying App Behavior on the {Android} Runtime ({ART})},
+  url = {https://developer.android.com/guide/practices/verifying-apps-art},
+  note = {\url{https://developer.android.com/guide/practices/verifying-apps-art}},
+}
+
 %--------------------------------------------------------------------------------------------------%
 % LLVM
 %--------------------------------------------------------------------------------------------------%
+@online{LLVMLangRef,
+  key = {LLVM},
+  title = {{LLVM} Language Reference Manual},
+  url = {https://llvm.org/docs/LangRef.html},
+  note = {\url{https://llvm.org/docs/LangRef.html}},
+}
+
 @misc{LLVMAA,
     author = {LLVM Developer Group},
     title = {LLVM Alias Analysis Infrastructure},
@@ -215,6 +316,27 @@
     url = {https://llvm.org/docs/MIRLangRef.html}
 }
 
+@online{LivePhysRegs:LLVM,
+  key = {LLVM},
+  title = {{llvm::LivePhysRegs} Class Reference},
+  url = {https://llvm.org/doxygen/classllvm_1_1LivePhysRegs.html},
+  note = {\url{https://llvm.org/doxygen/classllvm_1_1LivePhysRegs.html}},
+}
+
+@online{ARMConstantIslandPass:LLVM,
+  key = {LLVM},
+  title = {{ARMConstantIslandPass} File Reference},
+  url = {https://llvm.org/doxygen/ARMConstantIslandPass_8cpp.html},
+  note = {\url{https://llvm.org/doxygen/ARMConstantIslandPass_8cpp.html}},
+}
+
+@online{IndirectBrExpand:LLVM,
+  key = {LLVM},
+  title = {{IndirectBrExpandPass.cpp} File Reference},
+  url = {https://llvm.org/doxygen/IndirectBrExpandPass_8cpp.html},
+  note = {\url{https://llvm.org/doxygen/IndirectBrExpandPass_8cpp.html}},
+}
+
 %--------------------------------------------------------------------------------------------------%
 % Benchmarks
 %--------------------------------------------------------------------------------------------------%
@@ -223,3 +345,39 @@
     title = {SPEC CPU{\textsuperscript{\textregistered}} 2017},
     url = {https://www.spec.org/cpu2017/Docs/overview.html#benchmarks}
 }
+
+@online{CoreMarkPro:EEMBC,
+  key = {EEMBC},
+  title = {{CoreMark-Pro}: An {EEMBC} Benchmark},
+  url = {https://www.eembc.org/coremark-pro},
+  note = {\url{https://www.eembc.org/coremark-pro}},
+}
+
+@online{CoreMark:EEMBC,
+  key = {EEMBC},
+  title = {{CoreMark}: An {EEMBC} Benchmark},
+  url = {https://www.eembc.org/coremark},
+  note = {\url{https://www.eembc.org/coremark}},
+}
+
+@article{BEEBS:arXiv,
+  author = {Pallister, James and Hollis, Simon and Bennett, Jeremy},
+  title = {{BEEBS}: Open Benchmarks for Energy Measurements on Embedded Platforms},
+  journal = {arXiv preprint arXiv:1308.5174},
+  year = {2013},
+  month = {August},
+  url = {https://arxiv.org/abs/1308.5174},
+  archivePrefix = {arXiv},
+  eprint = {1308.5174},
+  primaryClass = {cs.PF},
+}
+
+@manual{CoreMark:ARM,
+  key = {ARM},
+  title = {CoreMark Benchmarking for ARM Cortex Processors: Application Note 350},
+  organization = {Arm Holdings},
+  month = {July},
+  year = {2013},
+  note = {{DAI} 0350A},
+}
+
