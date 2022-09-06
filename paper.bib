@@ -817,7 +817,7 @@
 
 @article{MemSafe:SPE13,
     author = {Simpson, Matthew S. and Barua, Rajeev K.},
-    title = {MemSafe: Ensuring the Spatial and Temporal Memory Safety of C at Runtime},
+    title = {MemSafe: Ensuring the Spatial and Temporal Memory Safety of C at Runtime},
     year = {2013},
     issue_date = {January 2013},
     publisher = {John Wiley & Sons, Inc.},
@@ -833,7 +833,6 @@
     numpages = {36},
     keywords = {reliability, programming languages, memory safety, verification}
 }
-
 
 @inproceedings{HeapLowFatPtr:CC16,
     author = {Duck, Gregory J. and Yap, Roland H. C.},
@@ -857,6 +856,37 @@
   author={Gregory Duck and Roland H.C. Yap and Lorenzo Cavallaro},
   booktitle={NDSS},
   year={2017}
+}
+
+@inproceedings{VariadicFn:Sec17,
+    author = {Biswas, Priyam and Di Federico, Alessandro and Carr, Scott A. and Rajasekaran, Prabhu and Volckaert, Stijn and Na, Yeoul and Franz, Michael and Payer, Mathias},
+    title = {Venerable Variadic Vulnerabilities Vanquished},
+    year = {2017},
+    isbn = {9781931971409},
+    publisher = {USENIX Association},
+    address = {USA},
+    booktitle = {Proceedings of the 26th USENIX Conference on Security Symposium},
+    pages = {183–198},
+    numpages = {16},
+    location = {Vancouver, BC, Canada},
+    series = {SEC'17}
+}
+
+@inproceedings{PtrSplit:CCS17,
+    author = {Liu, Shen and Tan, Gang and Jaeger, Trent},
+    title = {PtrSplit: Supporting General Pointers in Automatic Program Partitioning},
+    year = {2017},
+    isbn = {9781450349468},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3133956.3134066},
+    doi = {10.1145/3133956.3134066},
+    booktitle = {Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security},
+    pages = {2359–2371},
+    numpages = {13},
+    keywords = {bounds tracking, automatic program partitioning, data marshalling},
+    location = {Dallas, Texas, USA},
+    series = {CCS '17}
 }
 
 @inproceedings{CUP:AsiaCCS18,
@@ -1180,6 +1210,40 @@
   number={},
   pages={15-22},
   doi={10.1109/SecDev45635.2020.00018},
+}
+
+@inproceedings{UAFSan:ISSTA21,
+    author = {Gui, Binfa and Song, Wei and Huang, Jeff},
+    title = {UAFSan: An Object-Identifier-Based Dynamic Approach for Detecting Use-after-Free Vulnerabilities},
+    year = {2021},
+    isbn = {9781450384599},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3460319.3464835},
+    doi = {10.1145/3460319.3464835},
+    booktitle = {Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis},
+    pages = {309–321},
+    numpages = {13},
+    keywords = {object identifier, Use-After-Free (UAF), double-free, instrumentation, dynamic analysis},
+    location = {Virtual, Denmark},
+    series = {ISSTA 2021}
+}
+
+@inproceedings{CheckedCModel:CSF22,
+  author = {Liyi Li and Yiyun Liu and Deena L. Postol and Leonidas Lampropoulos and David Van Horn and Michael Hicks},
+  title = {A Formal Model of {Checked C}},
+  booktitle = {Proceedings of the Computer Security Foundations Symposium (CSF)},
+  month = aug,
+  year = 2022
+}
+
+@inproceedings{3C:OOPSLA22,
+  title = {{C} to {Checked C} by {3C}},
+  author = {Aravind Machiry and John Kastner and Matt McCutchen and Aaron Eline and Kyle Headley and Michael Hicks},
+  booktitle = {Proceedings of the {ACM} Conference on Object-Oriented Programming Languages, Systems, and Applications (OOPSLA)},
+  url = {https://arxiv.org/abs/2203.13445},
+  month = oct,
+  year = 2022
 }
 
 %--------------------------------------------------------------------------------------------------%
@@ -1892,7 +1956,7 @@
     keywords = {c, dangling pointers, memory safety, temporal errors},
 }
 
-@inproceedings{Cling:USS10,
+@inproceedings{Cling:Sec10,
     author = {Akritidis, Periklis},
     title = {{Cling: A Memory Allocator to Mitigate Dangling Pointers}},
     booktitle = {Proceedings of the 19th USENIX Conference on Security},
@@ -2035,6 +2099,20 @@
     series = {CCS '17}
 }
 
+@inproceedings{Guarder:Sec18,
+    author = {Silvestro, Sam and Liu, Hongyu and Liu, Tianyi and Lin, Zhiqiang and Liu, Tongping},
+    title = {Guarder: A Tunable Secure Allocator},
+    year = {2018},
+    isbn = {9781931971461},
+    publisher = {USENIX Association},
+    address = {USA},
+    booktitle = {Proceedings of the 27th USENIX Conference on Security Symposium},
+    pages = {117–133},
+    numpages = {17},
+    location = {Baltimore, MD, USA},
+    series = {SEC'18}
+}
+
 @inproceedings{pSweeper:CCS18,
     author = {Liu, Daiping and Zhang, Mingwei and Wang, Haining},
     title = {A Robust and Efficient Defense against Use-after-Free Exploits via Concurrent Pointer Sweeping},
@@ -2132,7 +2210,6 @@
     month = {may}
 }
 
-
 @inproceedings{HeapExpo:ACSAC20,
     author = {Zekun Shen and Brendan Dolan-Gavitt},
     title = {HeapExpo: Pinpointing Promoted Pointers to Prevent Use-After-Free Vulnerabilities},
@@ -2142,9 +2219,83 @@
     series = {ACSAC '20}
 }
 
+@inproceedings {PTAuth:Sec21,
+    author = {Reza Mirzazade Farkhani and Mansour Ahmadi and Long Lu},
+    title = {PTAuth: Temporal Memory Safety via Robust Points-to Authentication},
+    booktitle = {30th {USENIX} Security Symposium ({USENIX} Security 21)},
+    year = {2021},
+    publisher = {{USENIX} Association},
+    url = {https://www.usenix.org/conference/usenixsecurity21/presentation/mirzazade},
+    month = aug,
+}
+
+@inproceedings {FFmalloc:Sec21,
+    author = {Brian Wickman and Hong Hu and Insu Yun and Daehee JangJungWon Lim
+    and Sanidhya Kashyap and Taesoo Kim},
+    title = {Preventing Use-After-Free Attacks with Fast Forward Allocation},
+    booktitle = {30th {USENIX} Security Symposium ({USENIX} Security 21)},
+    year = {2021},
+    address = {Vancouver, B.C.},
+    url = {https://www.usenix.org/conference/usenixsecurity21/presentation/wickman},
+    publisher = {{USENIX} Association},
+    month = aug,
+}
+
+@inproceedings{ViK:ASPLOS22,
+    author = {Cho, Haehyun and Park, Jinbum and Oest, Adam and Bao, Tiffany and Wang, Ruoyu and Shoshitaishvili, Yan and Doup\'{e}, Adam and Ahn, Gail-Joon},
+    title = {ViK: Practical Mitigation of Temporal Memory Safety Violations through Object ID Inspection},
+    year = {2022},
+    isbn = {9781450392051},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3503222.3507780},
+    doi = {10.1145/3503222.3507780},
+    booktitle = {Proceedings of the 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+    pages = {271–284},
+    numpages = {14},
+    keywords = {Temporal Memory Safety Violations, Operating System Kernels},
+    location = {Lausanne, Switzerland},
+    series = {ASPLOS 2022}
+}
+
+
 %--------------------------------------------------------------------------------------------------%
-% New Architecture
+% Architectures
 %--------------------------------------------------------------------------------------------------%
+
+@inproceedings{CompilerPrefetch:ASPLOS96,
+    author = {Luk, Chi-Keung and Mowry, Todd C.},
+    title = {Compiler-Based Prefetching for Recursive Data Structures},
+    year = {1996},
+    isbn = {0897917677},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/237090.237190},
+    doi = {10.1145/237090.237190},
+    booktitle = {Proceedings of the Seventh International Conference on Architectural Support for Programming Languages an     d Operating Systems},
+    pages = {222–233},
+    numpages = {12},
+    location = {Cambridge, Massachusetts, USA},
+    series = {ASPLOS VII}
+}
+
+@inproceedings{LowFatPtr:CCS13,
+    author = {Kwon, Albert and Dhawan, Udit and Smith, Jonathan M. and Knight, Thomas F. and DeHon, Andre},
+    title = {Low-Fat Pointers: Compact Encoding and Efficient Gate-Level Implementation of Fat Pointers for Spatial Safety and Capability-Based Security},
+    year = {2013},
+    isbn = {9781450324779},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2508859.2516713},
+    doi = {10.1145/2508859.2516713},
+    booktitle = {Proceedings of the 2013 ACM SIGSAC Conference on Computer \& Communications Security},
+    pages = {721–732},
+    numpages = {12},
+    keywords = {processor, memory safety, spatial confinement, fat pointer, capabilities, security},
+    location = {Berlin, Germany},
+    series = {CCS '13}
+}
+
 @inproceedings{CHERI:ISCA14,
     author = {Woodruff, Jonathan and Watson, Robert N.M. and Chisnall, David and Moore, Simon W. and Anderson, Jonathan and Davis, Brooks and Laurie, Ben and Neumann, Peter G. and Norton, Robert and Roe, Michael},
     title = {{The CHERI Capability Model: Revisiting RISC in an Age of Risk}},
@@ -2494,6 +2645,22 @@
     year = {1988}
 }
 
+@inproceedings{BoehmGC:PLDI93,
+    author = {Boehm, Hans-Juergen},
+    title = {Space Efficient Conservative Garbage Collection},
+    year = {1993},
+    isbn = {0897915984},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/155090.155109},
+    doi = {10.1145/155090.155109},
+    booktitle = {Proceedings of the ACM SIGPLAN 1993 Conference on Programming Language Design and Implementation},
+    pages = {197–206},
+    numpages = {10},
+    location = {Albuquerque, New Mexico, USA},
+    series = {PLDI '93}
+}
+
 @article{RegionMM:IC97,
     author = {Tofte, Mads and Talpin, Jean-Pierre},
     title = {Region-Based Memory Management},
@@ -2511,6 +2678,24 @@
     pages = {109–176},
     numpages = {68}
 }
+
+@inproceedings{BoehmGC:POPL02,
+    author = {Boehm, Hans-J.},
+    title = {Bounding Space Usage of Conservative Garbage Collectors},
+    year = {2002},
+    isbn = {1581134509},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/503272.503282},
+    doi = {10.1145/503272.503282},
+    booktitle = {Proceedings of the 29th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+    pages = {93–100},
+    numpages = {8},
+    location = {Portland, Oregon},
+    series = {POPL '02}
+}
+
+
 
 @inproceedings{RegionMM:PLDI98,
     author = {Gay, David and Aiken, Alex},
