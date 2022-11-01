@@ -81,6 +81,48 @@
     series = {USENIX ATC '19}
 }
 
+@inproceedings{PKUPitfalls:Sec20,
+    author = {R. Joseph Connor and Tyler McDaniel and Jared M. Smith and Max Schuchard},
+    title = {{PKU} Pitfalls: Attacks on {PKU-based} Memory Isolation Systems},
+    booktitle = {29th USENIX Security Symposium (USENIX Security 20)},
+    year = {2020},
+    isbn = {978-1-939133-17-5},
+    pages = {1409--1426},
+    url = {https://www.usenix.org/conference/usenixsecurity20/presentation/connor},
+    publisher = {USENIX Association},
+    month = aug,
+}
+
+@inproceedings{NoPassPKU:EuroSys22,
+    author = {Voulimeneas, Alexios and Vinck, Jonas and Mechelinck, Ruben and Volckaert, Stijn},
+    title = {You Shall Not (by)Pass! Practical, Secure, and Fast PKU-Based Sandboxing},
+    year = {2022},
+    isbn = {9781450391627},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3492321.3519560},
+    doi = {10.1145/3492321.3519560},
+    booktitle = {Proceedings of the Seventeenth European Conference on Computer Systems},
+    pages = {266–282},
+    numpages = {17},
+    keywords = {security, in-process isolation, sanboxing, PKU},
+    location = {Rennes, France},
+    series = {EuroSys '22}
+}
+
+@inproceedings{Jenny:Sec22,
+    author = {David Schrammel and Samuel Weiser and Richard Sadek and Stefan Mangard},
+    title = {Jenny: Securing Syscalls for {PKU-based} Memory Isolation Systems},
+    booktitle = {31st USENIX Security Symposium (USENIX Security 22)},
+    year = {2022},
+    isbn = {978-1-939133-31-1},
+    address = {Boston, MA},
+    pages = {936--952},
+    url = {https://www.usenix.org/conference/usenixsecurity22/presentation/schrammel},
+    publisher = {USENIX Association},
+    month = aug,
+}
+
 @inproceedings {Silhouette:Sec20,
     author = {Jie Zhou and Yufei Du and Zhuojia Shen and Lele Ma and John Criswell and Robert J. Walls},
     title = {Silhouette: Efficient Protected Shadow Stacks for Embedded Systems},
@@ -1261,6 +1303,39 @@
 % Rust
 %--------------------------------------------------------------------------------------------------%
 
+@inproceedings{Sandcrust:PLOS17,
+    author = {Lamowski, Benjamin and Weinhold, Carsten and Lackorzynski, Adam and H\"{a}rtig, Hermann},
+    title = {Sandcrust: Automatic Sandboxing of Unsafe Components in Rust},
+    year = {2017},
+    isbn = {9781450351539},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3144555.3144562},
+    doi = {10.1145/3144555.3144562},
+    booktitle = {Proceedings of the 9th Workshop on Programming Languages and Operating Systems},
+    pages = {51–57},
+    numpages = {7},
+    location = {Shanghai, China},
+    series = {PLOS'17}
+}
+
+@inproceedings{FideliusCharm:CODSPY18,
+    author = {Almohri, Hussain M. J. and Evans, David},
+    title = {Fidelius Charm: Isolating Unsafe Rust Code},
+    year = {2018},
+    isbn = {9781450356329},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3176258.3176330},
+    doi = {10.1145/3176258.3176330},
+    booktitle = {Proceedings of the Eighth ACM Conference on Data and Application Security and Privacy},
+    pages = {248–255},
+    numpages = {8},
+    keywords = {compartmentalization, sandboxing, rust, isolation},
+    location = {Tempe, AZ, USA},
+    series = {CODASPY '18}
+}
+
 @inproceedings{UnsafeRust:ICSE20,
     author = {Evans, Ana Nora and Campbell, Bradford and Soffa, Mary Lou},
     title = {{Is Rust Used Safely by Software Developers?}},
@@ -1310,6 +1385,74 @@
     articleno = {136},
     numpages = {27},
     keywords = {Rust hypothesis, Rust, unsafe code, empirical study}
+}
+
+@inproceedings{XRust:ICSE20,
+    author = {Liu, Peiming and Zhao, Gang and Huang, Jeff},
+    title = {Securing Unsafe Rust Programs with XRust},
+    year = {2020},
+    isbn = {9781450371216},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3377811.3380325},
+    doi = {10.1145/3377811.3380325},
+    booktitle = {Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering},
+    pages = {234–245},
+    numpages = {12},
+    location = {Seoul, South Korea},
+    series = {ICSE '20}
+}
+
+@inproceedings{Galeed:ACSAC21,
+    author = {Rivera, Elijah and Mergendahl, Samuel and Shrobe, Howard and Okhravi, Hamed and Burow, Nathan},
+    title = {Keeping Safe Rust Safe with Galeed},
+    year = {2021},
+    isbn = {9781450385794},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3485832.3485903},
+    doi = {10.1145/3485832.3485903},
+    booktitle = {Annual Computer Security Applications Conference},
+    pages = {824–836},
+    numpages = {13},
+    location = {Virtual Event, USA},
+    series = {ACSAC '21}
+}
+
+@article{MemSafetyRust:TOSEM21,
+    author = {Xu, Hui and Chen, Zhuangbin and Sun, Mingshen and Zhou, Yangfan and Lyu, Michael R.},
+    title = {Memory-Safety Challenge Considered Solved? An In-Depth Study with All Rust CVEs},
+    year = {2021},
+    issue_date = {January 2022},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {31},
+    number = {1},
+    issn = {1049-331X},
+    url = {https://doi.org/10.1145/3466642},
+    doi = {10.1145/3466642},
+    journal = {ACM Trans. Softw. Eng. Methodol.},
+    month = {sep},
+    articleno = {3},
+    numpages = {25},
+    keywords = {common vulnerability and exposures, memory-safety bugs, Rust}
+}
+
+@inproceedings{PKRUSafe:EuroSys22,
+    author = {Kirth, Paul and Dickerson, Mitchel and Crane, Stephen and Larsen, Per and Dabrowski, Adrian and Gens, David and Na, Yeoul and Volckaert, Stijn and Franz, Michael},
+    title = {PKRU-Safe: Automatically Locking down the Heap between Safe and Unsafe Languages},
+    year = {2022},
+    isbn = {9781450391627},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3492321.3519582},
+    doi = {10.1145/3492321.3519582},
+    booktitle = {Proceedings of the Seventeenth European Conference on Computer Systems},
+    pages = {132–148},
+    numpages = {17},
+    keywords = {security, MPK, compartmentalization, compilers},
+    location = {Rennes, France},
+    series = {EuroSys '22}
 }
 
 @inproceedings{CLA:NDSS22,
@@ -2563,6 +2706,22 @@
   publisher = {IEEE Computer Society},
 }
 
+@inproceedings{ThinLTO:CGO17,
+    author = {Johnson, Teresa and Amini, Mehdi and Li, Xinliang David},
+    title = {ThinLTO: Scalable and Incremental LTO},
+    year = {2017},
+    isbn = {9781509049318},
+    publisher = {IEEE Press},
+    booktitle = {Proceedings of the 2017 International Symposium on Code Generation and Optimization},
+    pages = {111–121},
+    numpages = {11},
+    keywords = {Optimization, Link-Time Optimization, Inter-procedural, Cross-module},
+    location = {Austin, USA},
+    series = {CGO '17}
+}
+
+
+
 %==================================================================================================%
 % Programming Languages
 %==================================================================================================%
@@ -2644,7 +2803,7 @@
     series = {PLDI ’98}
 }
 
-@inproceedings{WSAM:PLDI17,
+@inproceedings{WASM:PLDI17,
     author = {Haas, Andreas and Rossberg, Andreas and Schuff, Derek L. and Titzer, Ben L. and Holman, Michael and Gohman, Dan and Wagner, Luke and Zakai, Alon and Bastien, JF},
     title = {Bringing the Web up to Speed with WebAssembly},
     year = {2017},
