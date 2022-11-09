@@ -18,7 +18,7 @@
 
 @article{StackSmash:Phrack96,
   author = {{Aleph One}},
-  title = {Smashing the Stack for Fun and Profit},
+  title = {{Smashing the Stack for Fun and Profit}},
   journal = {Phrack Magazine},
   year = {1996},
   month = {November},
@@ -55,6 +55,13 @@
     title = {Chrome: 70\% of all security bugs are memory safety issues},
     author = {Catalin Cimpanu},
     url = {https://www.zdnet.com/article/chrome-70-of-all-security-bugs-are-memory-safety-issues/}
+}
+
+@misc{MemSafety65:2020,
+    title = {What science can tell us about C and C++'s security},
+    author = {Alex Gaynor},
+    year = 2020,
+    url = {https://alexgaynor.net/2020/may/27/science-on-memory-unsafety-and-security/},
 }
 
 @misc{UAF:CWE416,
@@ -166,19 +173,20 @@
 }
 
 @misc{RustRFC,
-    title = {The Rust RFC Book},
+    title = {{The Rust RFC Book}},
+    author = {rust-lang},
     url = {https://rust-lang.github.io/rfcs},
     note = "Accessed: 09-24-2022"
 }
 
 @misc{RustPlace,
-    title = {Struct rustc\_middle::mir::syntax::Place},
+    title = {rustc\_middle::mir::syntax::Place},
     url = {https://doc.rust-lang.org/beta/nightly-rustc/rustc\_middle/mir/syntax/struct.Place.html},
     note = "Accessed: 10-03-2022"
 }
 
 @misc{CargoBuildRelease,
-    title = {The Cargo Book},
+    title = {{The Cargo Book}},
     url = {https://doc.rust-lang.org/cargo/reference/profiles.html#release},
     note = "Accessed: 10-10-2022"
 }
@@ -281,7 +289,7 @@
 
 @online{ARMv8.1ANewFeature,
   key = {ARM},
-  title = {The {ARMv8-A} Architecture and Its Ongoing Development},
+  title = {{The {ARMv8-A} Architecture and Its Ongoing Development}},
   year = {2014},
   url = {https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/the-armv8-a-architecture-and-its-ongoing-development},
   note = {\url{https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/the-armv8-a-architecture-and-its-ongoing-development}},
@@ -303,7 +311,7 @@
 
 @online{AndroidStackSize,
   key = {Android},
-  title = {Verifying App Behavior on the {Android} Runtime ({ART})},
+  title = {{Verifying App Behavior on the {Android} Runtime ({ART})}},
   url = {https://developer.android.com/guide/practices/verifying-apps-art},
   note = {\url{https://developer.android.com/guide/practices/verifying-apps-art}},
 }
@@ -338,7 +346,7 @@
 }
 
 @misc{lzfse,
-    title = {LZFSE compression library and command line tool},
+    title = {{LZFSE compression library and command line tool}},
     author = {{Apple Inc.}},
     year = 2017,
     url = {https://github.com/lzfse/lzfse}
@@ -383,7 +391,7 @@
 }
 
 @misc{cloc,
-    title = {cloc: Count Lines of Code},
+    title = {{cloc: Count Lines of Code}},
     author = {AIDanial},
     year = {2022},
     url = {https://github.com/AlDanial/cloc},
@@ -431,6 +439,17 @@
     title = {The Checked C clang repo},
     year = 2021,
     note = "Link to repository removed for double blind review."
+}
+
+@misc{ApacheHTTPD,
+    author = {Apache Software Foundation},
+    title = {Apache HTTP Server Project},
+    url = {https://httpd.apache.org/}
+}
+
+@misc{Go:PL,
+    title = {{The Go Programming Language}},
+    url = {https://go.dev/}
 }
 
 %--------------------------------------------------------------------------------------------------%
@@ -545,6 +564,17 @@
 }
 
 %--------------------------------------------------------------------------------------------------%
+% Books
+%--------------------------------------------------------------------------------------------------%
+
+@book{LinuxKernel:2005,
+    title = {Understanding the Linux Kernel},
+    author = {Daniel P. Bovet, Marco Cesati},
+    year = {2005},
+    isbn = {9780596005658}
+}
+
+%--------------------------------------------------------------------------------------------------%
 % Others
 %--------------------------------------------------------------------------------------------------%
 
@@ -555,3 +585,26 @@
     note = "Accessed: 10-27-2022"
 }
 
+@misc{RustCPPInter:Chrome,
+    title = {Rust and C++ interoperability},
+    author = {The Chrome Projects},
+    year = 2020,
+    url = {https://www.chromium.org/Home/chromium-security/memory-safety/rust-and-c-interoperability/},
+    note = "Accessed: 11-03-2022",
+}
+
+@misc{Servo,
+    title = {The Servo Browser Engine},
+    url = {https://servo.org/},
+}
+
+@misc{TiKV,
+    title = {{TiKV}: Distributed transactional key-value database},
+    url = {https://tikv.org/},
+}
+
+@misc{WriteWhatWhere,
+    title = {{{CWE-123}: Write-what-where Condition}},
+    url = {https://cwe.mitre.org/data/definitions/123.html},
+    note = "Accessed: 11-08-2022"
+}

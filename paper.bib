@@ -299,7 +299,7 @@
 
 @inproceedings{uRAI:NDSS20,
   author = {Almakhdhub, Naif Saleh and Clements, Abraham A. and Bagchi, Saurabh and Payer, Mathias},
-  title = {{$\mu$RAI}: Securing Embedded Systems with Return Address Integrity},
+  title = {{{$\mu$RAI}: Securing Embedded Systems with Return Address Integrity}},
   booktitle = {Proceedings of the 2020 Network and Distributed System Security Symposium},
   series = {NDSS '20},
   year = {2020},
@@ -321,7 +321,7 @@
 
 @article{StaticAnalyzer:SPE00,
     author = {Bush, William R. and Pincus, Jonathan D. and Sielaff, David J.},
-    title = {A Static Analyzer for Finding Dynamic Programming Errors},
+    title = {{A Static Analyzer for Finding Dynamic Programming Errors}},
     year = {2000},
     issue_date = {June 2000},
     publisher = {John Wiley & Sons, Inc.},
@@ -340,7 +340,7 @@
 
 @inproceedings{StaticAnalyzer:PLDI03,
     author = {Blanchet, Bruno and Cousot, Patrick and Cousot, Radhia and Feret, J\'{e}rome and Mauborgne, Laurent and Min\'{e}, Antoine and Monniaux, David and Rival, Xavier},
-    title = {A Static Analyzer for Large Safety-Critical Software},
+    title = {{A Static Analyzer for Large Safety-Critical Software}},
     year = {2003},
     isbn = {1581136625},
     publisher = {Association for Computing Machinery},
@@ -383,9 +383,92 @@
     series = {ICSE '06}
 }
 
+@inproceedings{KLEE:OSDI08,
+    author = {Cadar, Cristian and Dunbar, Daniel and Engler, Dawson},
+    title = {{KLEE: Unassisted and Automatic Generation of High-Coverage Tests for Complex Systems
+        Programs}},
+    year = {2008},
+    publisher = {USENIX Association},
+    address = {USA},
+    booktitle = {Proceedings of the 8th USENIX Conference on Operating Systems Design and Implementation},
+    pages = {209–224},
+    numpages = {16},
+    location = {San Diego, California},
+    series = {OSDI'08}
+}
+
+@inproceedings{RWset:TACAS08,
+  author    = {Peter Boonstoppel and Cristian Cadar and Dawson R. Engler},
+  editor    = {C. R. Ramakrishnan and Jakob Rehof},
+  title     = {{RWset: Attacking Path Explosion in Constraint-Based Test Generation}},
+  booktitle = {Tools and Algorithms for the Construction and Analysis of Systems,
+               14th International Conference, {TACAS} 2008, Held as Part of the Joint
+               European Conferences on Theory and Practice of Software, {ETAPS} 2008,
+               Budapest, Hungary, March 29-April 6, 2008. Proceedings},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {4963},
+  pages     = {351--366},
+  publisher = {Springer},
+  year      = {2008},
+  url       = {https://doi.org/10.1007/978-3-540-78800-3\_27},
+  doi       = {10.1007/978-3-540-78800-3\_27},
+  timestamp = {Tue, 14 May 2019 10:00:53 +0200},
+  biburl    = {https://dblp.org/rec/conf/tacas/BoonstoppelCE08.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{Coverity:CACM10,
+    author = {Bessey, Al and Block, Ken and Chelf, Ben and Chou, Andy and Fulton, Bryan and Hallem, Seth and Henri-Gros, Charles and Kamsky, Asya and McPeak, Scott and Engler, Dawson},
+    title = {{A Few Billion Lines of Code Later: Using Static Analysis to Find Bugs in the Real
+        World}},
+    year = {2010},
+    issue_date = {February 2010},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {53},
+    number = {2},
+    issn = {0001-0782},
+    url = {https://doi.org/10.1145/1646353.1646374},
+    doi = {10.1145/1646353.1646374},
+    abstract = {How Coverity built a bug-finding tool, and a business, around the unlimited supply of bugs in software systems.},
+    journal = {Commun. ACM},
+    month = {feb},
+    pages = {66–75},
+    numpages = {10}
+}
+
+@misc{Infer:FB,
+    title = {A tool to detect bugs in Java and C/C++/Objective-C code before it ships},
+    author = {Facebook},
+    url = {https://fbinfer.com}
+}
+
 %--------------------------------------------------------------------------------------------------%
 % End of Static Analysis
 %--------------------------------------------------------------------------------------------------%
+
+%--------------------------------------------------------------------------------------------------%
+% Fuzzing
+%--------------------------------------------------------------------------------------------------%
+
+@article{FuzzingSurvey:ACMSurvey22,
+    author = {Zhu, Xiaogang and Wen, Sheng and Camtepe, Seyit and Xiang, Yang},
+    title = {Fuzzing: A Survey for Roadmap},
+    year = {2022},
+    issue_date = {January 2022},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {54},
+    number = {11s},
+    issn = {0360-0300},
+    url = {https://doi.org/10.1145/3512345},
+    doi = {10.1145/3512345},
+    journal = {ACM Comput. Surv.},
+    month = {sep},
+    articleno = {230},
+    numpages = {36},
+    keywords = {input space, automation, Fuzz testing, fuzzing theory, security}
+}
 
 @inproceedings{SafeC:PLDI94,
     author = {Austin, Todd M. and Breach, Scott E. and Sohi, Gurindar S.},
@@ -826,7 +909,7 @@
 
 @inproceedings{WIT:Oakland08,
   author = {Akritidis, Periklis and Cadar, Cristian and Raiciu, Costin and Costa, Manuel and Castro, Miguel},
-  title = {Preventing Memory Error Exploits with {WIT}},
+  title = {{Preventing Memory Error Exploits with {WIT}}},
   booktitle = {Proceedings of the 2008 IEEE Symposium on Security and Privacy},
   series = {SP '08},
   year = {2008},
@@ -841,7 +924,8 @@
 
 @inproceedings{BBC:USS09,
   author = {Akritidis, Periklis and Costa, Manuel and Castro, Miguel and Hand, Steven},
-  title = {Baggy Bounds Checking: An Efficient and Backwards-Compatible Defense against out-of-Bounds Errors},
+  title = {{Baggy Bounds Checking: An Efficient and Backwards-Compatible Defense against
+      out-of-Bounds Errors}},
   booktitle = {Proceedings of the 18th USENIX Security Symposium},
   series = {Security '09},
   year = {2009},
@@ -913,7 +997,7 @@
 
 @inproceedings{VariadicFn:Sec17,
     author = {Biswas, Priyam and Di Federico, Alessandro and Carr, Scott A. and Rajasekaran, Prabhu and Volckaert, Stijn and Na, Yeoul and Franz, Michael and Payer, Mathias},
-    title = {Venerable Variadic Vulnerabilities Vanquished},
+    title = {{Venerable Variadic Vulnerabilities Vanquished}},
     year = {2017},
     isbn = {9781931971409},
     publisher = {USENIX Association},
@@ -944,7 +1028,7 @@
 
 @inproceedings{CUP:AsiaCCS18,
     author = {Burow, Nathan and McKee, Derrick and Carr, Scott A. and Payer, Mathias},
-    title = {CUP: Comprehensive User-Space Protection for C/C++},
+    title = {{CUP: Comprehensive User-Space Protection for C/C++}},
     year = {2018},
     isbn = {9781450355766},
     publisher = {Association for Computing Machinery},
@@ -986,9 +1070,20 @@
 % Mitigations
 %--------------------------------------------------------------------------------------------------%
 
+@inproceedings {Stackguard:Sec98,
+    author = {Crispin Cowan and Calton Pu and Dave Maier and Jonathan Walpole and Peat Bakke and Steve Beattie and Aaron Grier and Perry Wagle and Qian Zhang and Heather Hinton},
+    title = {{StackGuard}: Automatic Adaptive Detection and Prevention of {Buffer-Overflow} Attacks},
+    booktitle = {7th USENIX Security Symposium (USENIX Security 98)},
+    year = {1998},
+    address = {San Antonio, TX},
+    url = {https://www.usenix.org/conference/7th-usenix-security-symposium/stackguard-automatic-adaptive-detection-and-prevention},
+    publisher = {USENIX Association},
+    month = jan,
+}
+
 @article{CFISurvey:CSUR17,
     author = {Burow, Nathan and Carr, Scott A. and Nash, Joseph and Larsen, Per and Franz, Michael and Brunthaler, Stefan and Payer, Mathias},
-    title = {Control-Flow Integrity: Precision, Security, and Performance},
+    title = {{Control-Flow Integrity: Precision, Security, and Performance}},
     year = {2017},
     issue_date = {April 2017},
     publisher = {Association for Computing Machinery},
@@ -1321,7 +1416,7 @@
 
 @inproceedings{FideliusCharm:CODSPY18,
     author = {Almohri, Hussain M. J. and Evans, David},
-    title = {Fidelius Charm: Isolating Unsafe Rust Code},
+    title = {{Fidelius Charm: Isolating Unsafe Rust Code}},
     year = {2018},
     isbn = {9781450356329},
     publisher = {Association for Computing Machinery},
@@ -1371,7 +1466,7 @@
 
 @article{UnsafeRust:OOPSLA20,
     author = {Astrauskas, Vytautas and Matheja, Christoph and Poli, Federico and M\"{u}ller, Peter and Summers, Alexander J.},
-    title = {How Do Programmers Use Unsafe Rust?},
+    title = {{How Do Programmers Use Unsafe Rust?}},
     year = {2020},
     issue_date = {November 2020},
     publisher = {Association for Computing Machinery},
@@ -1561,8 +1656,19 @@
 }
 
 %
-% ROP papers
+% ROP papers (and ret2lib)
 %
+
+@misc{Ret2Libc,
+    author = {Solar Designer},
+    title = {Return-into-libc Attack},
+    booktitle = {Bugtraq},
+    month = {August},
+    year = {1997},
+    url = {https://insecure.org/sploits/linux.libc.return.lpr.sploit.html},
+    note = "\url{https://insecure.org/sploits/linux.libc.return.lpr.sploit.html}"
+}
+
 @inproceedings{ROP:CCS07,
     author = {Shacham, Hovav},
     title = {The Geometry of Innocent Flesh on the Bone: Return-into-libc Without Function Calls (on the x86)},
@@ -1603,7 +1709,7 @@
 
 @inproceedings{ROPDanger:USS14,
   author = {Carlini, Nicholas and Wagner, David},
-  title = {{ROP} is Still Dangerous: Breaking Modern Defenses},
+  title = {{{ROP} is Still Dangerous: Breaking Modern Defenses}},
   booktitle = {Proceedings of the 23rd USENIX Security Symposium},
   series = {Security '14},
   year = {2014},
@@ -1638,7 +1744,7 @@
 
 @article{CFI:TISSEC09,
   author = {Abadi, Mart\'{\i}n and Budiu, Mihai and Erlingsson, \'{U}lfar and Ligatti, Jay},
-  title = {Control-Flow Integrity Principles, Implementations, and Applications},
+  title = {{Control-Flow Integrity Principles, Implementations, and Applications}},
   journal = {ACM Transactions on Information Systems Security},
   issue_date = {October 2009},
   volume = {13},
@@ -1686,7 +1792,7 @@
 }
 
 %--------------------------------------------------------------------------------------------------%
-% Address Isolation
+% Intra-Address Space Isolation
 %--------------------------------------------------------------------------------------------------%
 
 %
@@ -1745,7 +1851,7 @@
 
 @inproceedings{BGI:SOSP09,
     author = {Castro, Miguel and Costa, Manuel and Martin, Jean-Philippe and Peinado, Marcus and Akritidis, Periklis and Donnelly, Austin and Barham, Paul and Black, Richard},
-    title = {Fast Byte-Granularity Software Fault Isolation},
+    title = {{Fast Byte-Granularity Software Fault Isolation}},
     year = {2009},
     isbn = {9781605587523},
     publisher = {Association for Computing Machinery},
@@ -1880,9 +1986,9 @@
     series = {ASIA CCS ’15}
 }
 
-@inproceedings{SSSoK:Oakland19,
+@inproceedings{SSSok:Oakland19,
   author = {Burow, Nathan and Zhang, Xinping and Payer, Mathias},
-  title = {{SoK}: Shining Light on Shadow Stacks},
+  title = {{{SoK}: Shining Light on Shadow Stacks}},
   booktitle = {Proceedings of the 2019 IEEE Symposium on Security and Privacy},
   series = {SP '19},
   year = {2019},
@@ -1905,7 +2011,7 @@
 %
 @inproceedings{NonCtrlData:USS05,
   author = {Chen, Shuo and Xu, Jun and Sezer, Emre C. and Gauriar, Prachi and Iyer, Ravishankar K.},
-  title = {Non-Control-Data Attacks Are Realistic Threats},
+  title = {{Non-Control-Data Attacks Are Realistic Threats}},
   booktitle = {Proceedings of the 14th USENIX Security Symposium},
   series = {Security '05},
   year = {2005},
@@ -1946,7 +2052,7 @@
 
 @inproceedings {CFBending:USS15,
     author = {Nicholas Carlini and Antonio Barresi and Mathias Payer and David Wagner and Thomas R. Gross},
-    title = {Control-Flow Bending: On the Effectiveness of Control-Flow Integrity},
+    title = {{Control-Flow Bending: On the Effectiveness of Control-Flow Integrity}},
     booktitle = {24th {USENIX} Security Symposium ({USENIX} Security 15)},
     year = {2015},
     isbn = {978-1-931971-232},
@@ -2062,7 +2168,7 @@
 
 @incollection{UAF:BlackHatUSA07,
   author = {Afek, Jonathan and Sharabani, Adi},
-  title = {Dangling pointer: Smashing the Pointer for Fun and Profit},
+  title = {{Dangling pointer: Smashing the Pointer for Fun and Profit}},
   booktitle = {Black Hat USA},
   year = {2007},
   url = {https://www.blackhat.com/presentations/bh-usa-07/Afek/Whitepaper/bh-usa-07-afek-WP.pdf},
@@ -2406,7 +2512,8 @@
 
 @inproceedings{ViK:ASPLOS22,
     author = {Cho, Haehyun and Park, Jinbum and Oest, Adam and Bao, Tiffany and Wang, Ruoyu and Shoshitaishvili, Yan and Doup\'{e}, Adam and Ahn, Gail-Joon},
-    title = {ViK: Practical Mitigation of Temporal Memory Safety Violations through Object ID Inspection},
+    title = {{ViK: Practical Mitigation of Temporal Memory Safety Violations through Object ID
+        Inspection}},
     year = {2022},
     isbn = {9781450392051},
     publisher = {Association for Computing Machinery},
@@ -2499,6 +2606,13 @@
 %--------------------------------------------------------------------------------------------------%
 % Pointer Analysis
 %--------------------------------------------------------------------------------------------------%
+@phdthesis{AndersenPA,
+    author = {Lars Ole Andersen},
+    title = {Program Analysis and Specialization for the C Programming Language},
+    school = {University of Copenhagen},
+    year = 1994
+}
+
 @article{AliasUndecide:TOPLAS94,
     author = {Ramalingam, G.},
     title = {The Undecidability of Aliasing},
@@ -2660,7 +2774,7 @@
 %==================================================================================================%
 @inproceedings{PL.8:CC82,
   author = {Auslander, Marc and Hopkins, Martin},
-  title = {An Overview of the {PL.8} Compiler},
+  title = {{An Overview of the {PL.8} Compiler}},
   booktitle = {Proceedings of the 1982 SIGPLAN Symposium on Compiler Construction},
   series = {CC '82},
   year = {1982},
@@ -2704,6 +2818,36 @@
   url = {https://doi.org/10.1109/CGO.2004.1281665},
   doi = {10.1109/CGO.2004.1281665},
   publisher = {IEEE Computer Society},
+}
+
+@inproceedings{SYZYGY:CGO04,
+    author = {Moon, Sungdo and Li, Xinliang D. and Hundt, Robert and Chakrabarti, Dhruva R. and Lozano, Luis A. and Srinivasan, Uma and Liu, Shin-Ming},
+    title = {SYZYGY - A Framework for Scalable Cross-Module IPO},
+    year = {2004},
+    isbn = {0769521029},
+    publisher = {IEEE Computer Society},
+    address = {USA},
+    booktitle = {Proceedings of the International Symposium on Code Generation and Optimization: Feedback-Directed and Runtime Optimization},
+    pages = {65},
+    location = {Palo Alto, California},
+    series = {CGO '04}
+}
+
+@inproceedings{LIPO:CGO10,
+    author = {Li, David Xinliang and Ashok, Raksit and Hundt, Robert},
+    title = {Lightweight Feedback-Directed Cross-Module Optimization},
+    year = {2010},
+    isbn = {9781605586359},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/1772954.1772964},
+    doi = {10.1145/1772954.1772964},
+    booktitle = {Proceedings of the 8th Annual IEEE/ACM International Symposium on Code Generation and Optimization},
+    pages = {53–61},
+    numpages = {9},
+    keywords = {cross-module, inter-procedural, optimization, feedback-directed},
+    location = {Toronto, Ontario, Canada},
+    series = {CGO '10}
 }
 
 @inproceedings{ThinLTO:CGO17,
@@ -2831,7 +2975,7 @@
 
 @article{BDWGC:SPE88,
     author = {Boehm, Hans-Juergen and Weiser, Mark},
-    title = {Garbage collection in an uncooperative environment},
+    title = {{Garbage Collection in an Uncooperative Environment}},
     journal = {Software: Practice and Experience},
     volume = {18},
     number = {9},
@@ -2845,7 +2989,7 @@
 
 @inproceedings{BoehmGC:PLDI93,
     author = {Boehm, Hans-Juergen},
-    title = {Space Efficient Conservative Garbage Collection},
+    title = {{Space Efficient Conservative Garbage Collection}},
     year = {1993},
     isbn = {0897915984},
     publisher = {Association for Computing Machinery},
@@ -2879,7 +3023,7 @@
 
 @inproceedings{BoehmGC:POPL02,
     author = {Boehm, Hans-J.},
-    title = {Bounding Space Usage of Conservative Garbage Collectors},
+    title = {{Bounding Space Usage of Conservative Garbage Collectors}},
     year = {2002},
     isbn = {1581134509},
     publisher = {Association for Computing Machinery},
@@ -3343,6 +3487,23 @@
     series = {ASPLOS VII}
 }
 
+@inproceedings{Heartbleed:IMC14,
+    author = {Durumeric, Zakir and Li, Frank and Kasten, James and Amann, Johanna and Beekman, Jethro and Payer, Mathias and Weaver, Nicolas and Adrian, David and Paxson, Vern and Bailey, Michael and Halderman, J. Alex},
+    title = {The Matter of Heartbleed},
+    year = {2014},
+    isbn = {9781450332132},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2663716.2663755},
+    doi = {10.1145/2663716.2663755},
+    booktitle = {Proceedings of the 2014 Conference on Internet Measurement Conference},
+    pages = {475–488},
+    numpages = {14},
+    keywords = {security, openssl, heartbleed, internet-wide scanning},
+    location = {Vancouver, BC, Canada},
+    series = {IMC '14}
+}
+
 @inproceedings{PAMD:ISMM17,
   author = {Liu, Zhengyang and Criswell, John},
   title = {Flexible and Efficient Memory Object Metadata},
@@ -3358,3 +3519,19 @@
   publisher = {ACM},
 }
 
+@inproceedings{PLCmp:SLE17,
+    author = {Pereira, Rui and Couto, Marco and Ribeiro, Francisco and Rua, Rui and Cunha, J\'{a}come and Fernandes, Jo\~{a}o Paulo and Saraiva, Jo\~{a}o},
+    title = {Energy Efficiency across Programming Languages: How Do Energy, Time, and Memory Relate?},
+    year = {2017},
+    isbn = {9781450355254},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3136014.3136031},
+    doi = {10.1145/3136014.3136031},
+    booktitle = {Proceedings of the 10th ACM SIGPLAN International Conference on Software Language Engineering},
+    pages = {256–267},
+    numpages = {12},
+    keywords = {Green Software, Energy Efficiency, Programming Languages, Language Benchmarking},
+    location = {Vancouver, BC, Canada},
+    series = {SLE 2017}
+}
